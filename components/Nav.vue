@@ -25,7 +25,7 @@ export default {
 <style lang="postcss">
 [data-tipe-ui='UiNav'] {
   display: grid;
-  align-items: center;
+  align-items: end;
   grid-column-gap: 1rem;
   grid-template-columns: 1fr 2fr 5fr 1fr;
   grid-template-areas: '. logo github .';

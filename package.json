@@ -28,5 +28,8 @@
     "postcss-loader": "^3.0.0",
     "postcss-nesting": "^6.0.0",
     "vue-types": "^1.3.2"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
   }
 }

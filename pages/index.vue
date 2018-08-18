@@ -24,6 +24,7 @@ export default {
   grid-template-columns: 1fr 2fr 5fr 1fr;
   grid-auto-rows: 1fr;
   grid-template-areas: '. sidebar content .';
+  color: grey;
 }
 
 .grid-sidebar {

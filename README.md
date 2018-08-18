@@ -4,7 +4,7 @@
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm install # Or yarn install
 
@@ -19,5 +19,4 @@ $ npm start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
-
+(https://cdn.tipe.io/5ac2875c75eaa200133cad71/4d3c7f16-f509-476d-951a-e62cad00463d/in-progress.png)

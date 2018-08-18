@@ -11,7 +11,7 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "prettier": "prettier --find-config-path ./prettier.config.js",
-    "precommit": "prettier && lint"
+    "precommit": "npm run prettier && npm run lint"
   },
   "dependencies": {
     "nuxt": "^1.0.0"
@@ -28,8 +28,5 @@
     "postcss-loader": "^3.0.0",
     "postcss-nesting": "^6.0.0",
     "vue-types": "^1.3.2"
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
   }
 }

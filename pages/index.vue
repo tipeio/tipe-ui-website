@@ -29,7 +29,6 @@ export default {
   grid-template-areas:
     ' nav nav nav nav'
     '. sidebar content .';
-  color: grey;
 }
 
 .grid-sidebar {

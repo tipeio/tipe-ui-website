@@ -12,6 +12,7 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
+    "@tipe/ui": "^0.4.0",
     "nuxt": "^1.0.0"
   },
   "devDependencies": {

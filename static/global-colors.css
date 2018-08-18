@@ -1,4 +1,10 @@
 :root {
   --light-purple: #fafbff;
   --dark-purple: #6047fa;
+  --purple-gradient: linear-gradient(
+    -136deg,
+    #714bfe 9%,
+    #6047fa 55%,
+    #5727e1 100%
+  );
 }

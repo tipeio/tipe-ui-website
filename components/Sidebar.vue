@@ -6,17 +6,14 @@
 </template>
 
 <script>
-  import vueTypes from 'vue-types'
+import vueTypes from 'vue-types'
 export default {
-  name: 'UISidebar',
+  name: 'UiSidebar'
 }
 </script>
 
 <style lang="postcss">
-
-[data-tipe-ui='UISidebar'] {
-
-
+[data-tipe-ui='UiSidebar'] {
 }
 
 .sidebar {
@@ -25,9 +22,4 @@ export default {
   border: 1px solid var(--light-purple);
   border-radius: 6px;
 }
-
-
 </style>
-
-
-

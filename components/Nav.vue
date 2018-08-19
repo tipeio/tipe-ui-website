@@ -1,9 +1,9 @@
 <template>
   <nav :data-tipe-ui="$options.name" class="nav">
-    <div class="grid-logo">
-    <tipe-logo  />
-    <h1 class="tipe-text">tipe-ui</h1>
-    </div>
+    <nuxt-link to="/" class="grid-logo">
+      <tipe-logo  />
+      <h1 class="tipe-text">tipe-ui</h1>
+    </nuxt-link>
     <a class="grid-github-logo" href="https://github.com/tipeio/tipe-ui"><github-logo /></a>
   </nav>
 </template>
@@ -22,7 +22,7 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 [data-tipe-ui='UiNav'] {
   display: grid;
   align-items: end;
@@ -42,6 +42,7 @@ export default {
   grid-area: logo;
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 
 .grid-github-logo {

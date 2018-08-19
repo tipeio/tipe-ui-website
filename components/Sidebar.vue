@@ -3,14 +3,14 @@
     <div class="sidebar">
       <ul>
         <li class="heading">Getting Started</li>
-        <li class="list-item"><nuxt-link class="link" to="/install">Install</nuxt-link></li>
-        <li class="list-item"><nuxt-link class="link" to="/quick-start">Quick Start</nuxt-link></li>
+        <li class="list-item"><nuxt-link class="link" to="/getting-started/install">Install</nuxt-link></li>
+        <li class="list-item"><nuxt-link class="link" to="/getting-started/quick-start">Quick Start</nuxt-link></li>
         <li class="heading">Components</li>
         <li class="sub-heading">Buttons</li>
-        <li class="list-item"><nuxt-link class="link" to="/button">Default Button</nuxt-link></li>
+        <li class="list-item"><nuxt-link class="link" to="/components/button">Default Button</nuxt-link></li>
         <li class="list-item"><nuxt-link class="link" to="/icon-button">Icon Button</nuxt-link></li>
         <li class="sub-heading">Form</li>
-        <li class="list-item"><nuxt-link class="link" to="/input">Input</nuxt-link></li>
+        <li class="list-item"><nuxt-link class="link" to="/components/input">Input</nuxt-link></li>
         <li class="list-item"><nuxt-link class="link" to="/number-input">Number Input</nuxt-link></li>
         <li class="list-item"><nuxt-link class="link" to="/textarea">Textarea</nuxt-link></li>
         <li class="list-item"><nuxt-link class="link" to="/radio">Radio</nuxt-link></li>
@@ -27,7 +27,7 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 [data-tipe-ui='UiSidebar'] {
 }
 
@@ -43,6 +43,7 @@ export default {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 
   & li {
     height: 2rem;

@@ -5,14 +5,14 @@
   "author": "Olivia Oddo <olivia.oddo@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt --spa",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@tipe/ui": "^0.4.0",
+    "@tipe/ui": "^2.0.0",
     "nuxt": "^1.0.0"
   },
   "devDependencies": {

@@ -1,4 +1,4 @@
-# tipe-ui-website
+# tipe-ui
 
 > Docs for tipe-ui
 
@@ -19,4 +19,4 @@ $ npm start
 $ npm run generate
 ```
 
-![alt text](https://cdn.tipe.io/5ac2875c75eaa200133cad71/4d3c7f16-f509-476d-951a-e62cad00463d/in-progress.png "In Progress")
+![alt text](https://cdn.tipe.io/5ac2875c75eaa200133cad71/4d3c7f16-f509-476d-951a-e62cad00463d/in-progress.png 'In Progress')

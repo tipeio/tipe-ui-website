@@ -2,7 +2,7 @@
   <section class="container">
     <ui-nav class="grid-nav"/>
     <ui-side-bar class="grid-sidebar"/>
-    <nuxt class="grid-content border"/>
+    <nuxt class="grid-content"/>
   </section>
 </template>
 
@@ -37,13 +37,10 @@ export default {
 
 .grid-content {
   grid-area: content;
+  padding: 1.5rem;
 }
 
 .grid-nav {
   grid-area: nav;
-}
-
-.border {
-  border: 1px solid red;
 }
 </style>

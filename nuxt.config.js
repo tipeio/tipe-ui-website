@@ -19,6 +19,7 @@ module.exports = {
   ** Build configuration
   */
   css: ['~static/global.css'],
+  plugins: ['~/plugins/vue-highlight'],
   build: {
     /*
     ** Run ESLint on save

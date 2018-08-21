@@ -19,4 +19,4 @@ $ npm start
 $ npm run generate
 ```
 
-![alt text](https://cdn.tipe.io/5ac2875c75eaa200133cad71/4d3c7f16-f509-476d-951a-e62cad00463d/in-progress.png 'In Progress')
+![alt text](https://cdn.tipe.io/5ac2875c75eaa200133cad71/11ff7377-446e-461f-9aa8-e230ad88ff9a/Screen%20Shot%202018-08-19%20at%209.43.55%20PM.png 'In Progress')

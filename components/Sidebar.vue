@@ -1,6 +1,6 @@
 <template>
   <div :data-tipe-ui="$options.name" >
-    <div class="sidebar">
+    <tipe-scroll class="sidebar">
       <ul>
         <li class="heading">Getting Started</li>
         <li class="list-item"><nuxt-link class="link" to="/getting-started/install">Install</nuxt-link></li>
@@ -20,14 +20,19 @@
         <li class="list-item"><nuxt-link class="link" to="/components/search">Search</nuxt-link></li>
 
       </ul>
-    </div>
+    </tipe-scroll>
   </div>
 </template>
 
 <script>
 import vueTypes from 'vue-types'
+import TipeScroll from './Component/Scroll.vue'
+
 export default {
-  name: 'UiSidebar'
+  name: 'UiSidebar',
+  components: {
+    TipeScroll
+  }
 }
 </script>
 

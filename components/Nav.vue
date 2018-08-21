@@ -4,12 +4,16 @@
       <tipe-logo  />
       <h1 class="tipe-text">tipe-ui</h1>
     </nuxt-link>
-    <a class="grid-github-logo" href="https://github.com/tipeio/tipe-ui"><github-logo /></a>
+    <div class="right">
+      <tipe-search class="grid-search" />
+      <a class="grid-github-logo" href="https://github.com/tipeio/tipe-ui"><github-logo /></a>
+    </div>
   </nav>
 </template>
 
 <script>
 import vueTypes from 'vue-types'
+import { TipeSearch } from '@tipe/ui'
 import TipeLogo from '~/assets/tipe-logo.svg'
 import GithubLogo from '~/assets/github-logo.svg'
 
@@ -17,7 +21,8 @@ export default {
   name: 'UiNav',
   components: {
     TipeLogo,
-    GithubLogo
+    GithubLogo,
+    TipeSearch
   }
 }
 </script>
@@ -28,7 +33,7 @@ export default {
   align-items: end;
   grid-column-gap: 1rem;
   grid-template-columns: 1fr 2fr 5fr 1fr;
-  grid-template-areas: '. logo github .';
+  grid-template-areas: '. logo right .';
 }
 
 .tipe-text {
@@ -52,5 +57,15 @@ export default {
   &:hover {
     opacity: 0.6;
   }
+}
+
+.grid-search {
+  grid-area: search;
+}
+
+.right {
+  grid-area: right;
+  display: flex;
+  justify-content: flex-end;
 }
 </style>

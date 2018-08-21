@@ -1,19 +1,22 @@
 /*
 Style with support for rainbow parens
 */
-
 .hljs {
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #474949;
+  background: var(--light-purple);
   color: #d1d9e1;
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter,
+    monospace;
 }
 
 .hljs-comment,
 .hljs-quote {
-  color: #969896;
+  color: var(--text-light-gray);
   font-style: italic;
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter,
+    monospace;
 }
 
 .hljs-keyword,
@@ -21,39 +24,51 @@ Style with support for rainbow parens
 .hljs-literal,
 .hljs-type,
 .hljs-addition {
-  color: #cc99cc;
+  color: var(--dark-purple);
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter,
+    monospace;
 }
 
 .hljs-number,
 .hljs-selector-attr,
 .hljs-selector-pseudo {
-  color: #f99157;
+  color: #4223b9;
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter,
+    monospace;
 }
 
 .hljs-string,
 .hljs-doctag,
 .hljs-regexp {
-  color: #8abeb7;
+  color: var(--text-gray);
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter,
+    monospace;
 }
 
 .hljs-title,
 .hljs-name,
 .hljs-section,
 .hljs-built_in {
-  color: #b5bd68;
+  color: #16e4a4;
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter,
+    monospace;
 }
 
 .hljs-variable,
 .hljs-template-variable,
 .hljs-selector-id,
 .hljs-class .hljs-title {
-  color: #ffcc66;
+  color: var(--text-purple);
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter,
+    monospace;
 }
 
 .hljs-section,
 .hljs-name,
 .hljs-strong {
   font-weight: bold;
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter,
+    monospace;
 }
 
 .hljs-symbol,
@@ -61,22 +76,32 @@ Style with support for rainbow parens
 .hljs-subst,
 .hljs-meta,
 .hljs-link {
-  color: #f99157;
+  color: #e44646;
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter,
+    monospace;
 }
 
 .hljs-deletion {
-  color: #dc322f;
+  color: #06b37d;
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter,
+    monospace;
 }
 
 .hljs-formula {
   background: #eee8d5;
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter,
+    monospace;
 }
 
 .hljs-attr,
 .hljs-attribute {
-  color: #81a2be;
+  color: var(--text-gray);
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter,
+    monospace;
 }
 
 .hljs-emphasis {
   font-style: italic;
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter,
+    monospace;
 }

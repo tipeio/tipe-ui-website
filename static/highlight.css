@@ -6,9 +6,12 @@ Style with support for rainbow parens
   overflow-x: auto;
   padding: 0.5em;
   background: var(--light-purple);
+  <<<<<<<HEAD
   color: var(--text-purple);
-  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter,
-    monospace;
+  =======color: #d1d9e1;
+  >>>>>>>1fa9565f029b0a44d5f8f0879a20fd13c7f34829
+  font-family: Courier New,
+    Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
 }
 
 .hljs-comment,

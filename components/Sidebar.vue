@@ -7,14 +7,18 @@
         <li class="list-item"><nuxt-link class="link" to="/getting-started/quick-start">Quick Start</nuxt-link></li>
         <li class="heading">Components</li>
         <li class="sub-heading">Buttons</li>
-        <li class="list-item"><nuxt-link class="link" to="/components/button">Default Button</nuxt-link></li>
-        <li class="list-item"><nuxt-link class="link" to="/icon-button">Icon Button</nuxt-link></li>
+        <li class="list-item"><nuxt-link class="link" to="/components/button">Button</nuxt-link></li>
+        <li class="list-item"><nuxt-link class="link" to="/components/icon-button">Icon Button</nuxt-link></li>
         <li class="sub-heading">Form</li>
-        <li class="list-item"><nuxt-link class="link" to="/components/input">Input</nuxt-link></li>
-        <li class="list-item"><nuxt-link class="link" to="/number-input">Number Input</nuxt-link></li>
-        <li class="list-item"><nuxt-link class="link" to="/textarea">Textarea</nuxt-link></li>
-        <li class="list-item"><nuxt-link class="link" to="/radio">Radio</nuxt-link></li>
-        <li class="list-item"><nuxt-link class="link" to="/checkbox">Checkbox</nuxt-link></li>
+        <li class="list-item"><nuxt-link class="link" to="/components/text-input">Text Input</nuxt-link></li>
+        <li class="list-item"><nuxt-link class="link" to="/components/number-input">Number Input</nuxt-link></li>
+        <li class="list-item"><nuxt-link class="link" to="/components/textarea">Textarea</nuxt-link></li>
+        <li class="list-item"><nuxt-link class="link" to="/components/radio">Radio</nuxt-link></li>
+        <li class="list-item"><nuxt-link class="link" to="/components/checkbox">Checkbox</nuxt-link></li>
+        <li class="list-item"><nuxt-link class="link" to="/components/switch">Switch</nuxt-link></li>
+        <li class="list-item"><nuxt-link class="link" to="/components/select">Select</nuxt-link></li>
+        <li class="list-item"><nuxt-link class="link" to="/components/search">Search</nuxt-link></li>
+
       </ul>
     </div>
   </div>

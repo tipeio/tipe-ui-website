@@ -1,14 +1,14 @@
 <template>
   <component-grid>
-    <component-title title="Button" />
-    <tipe-card><tipe-button>Button</tipe-button></tipe-card>
+    <component-title title="Switch" />
+    <tipe-card><tipe-switch/></tipe-card>
     <h2 class="sub-title">Attributes</h2>
     <ui-table :attributes="attributes" />
   </component-grid>
 </template>
 
 <script>
-import { TipeCard, TipeButton } from '@tipe/ui'
+import { TipeCard, TipeSwitch } from '@tipe/ui'
 import UiTable from '~/components/Table.vue'
 import ComponentTitle from '~/components/Component/Title.vue'
 import ComponentGrid from '~/components/Component/Grid.vue'
@@ -17,7 +17,7 @@ export default {
   layout: 'docs',
   components: {
     TipeCard,
-    TipeButton,
+    TipeSwitch,
     UiTable,
     ComponentTitle,
     ComponentGrid

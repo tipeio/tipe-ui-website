@@ -110,9 +110,9 @@
     vue "^2.5.16"
     vue-types "^1.3.2"
 
-"@tipe/ui@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@tipe/ui/-/ui-2.0.0.tgz#78765269de57104368c8cbe27db9703ee6534bff"
+"@tipe/ui@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@tipe/ui/-/ui-2.0.4.tgz#5fb3cfde0c5b54f4851bde6d7c0df01396abd67c"
   dependencies:
     "@tipe/tipe-config" "^1.0.0"
     "@tipe/tipe-constants" "^1.0.0"

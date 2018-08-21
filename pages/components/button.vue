@@ -1,7 +1,11 @@
 <template>
   <component-grid>
     <component-title title="Button" />
-    <tipe-card><tipe-button>Button</tipe-button></tipe-card>
+    <tipe-card><tipe-button>Button</tipe-button>
+      <div>
+        <pre v-highlightjs><code class="javascript">const s = new Date().toString()</code></pre>
+      </div>
+    </tipe-card>
     <h2 class="sub-title">Attributes</h2>
     <ui-table :attributes="attributes" />
   </component-grid>

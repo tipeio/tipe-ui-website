@@ -103,11 +103,6 @@ export default {
   padding: 2rem 0;
   flex-wrap: wrap;
 }
-.sub-title {
-  color: var(--text-purple-gray);
-  font-size: 2rem;
-}
-
 #icons {
   padding: 1.5rem;
   display: grid;

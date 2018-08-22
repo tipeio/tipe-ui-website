@@ -89,9 +89,10 @@ export default {
   align-items: center;
   justify-content: space-evenly;
   padding: 2rem 0;
+  flex-wrap: wrap;
 }
-.sub-title {
-  color: var(--text-purple-gray);
-  font-size: 2rem;
+
+.flex > button {
+  margin: 1rem 0;
 }
 </style>

@@ -2,7 +2,7 @@
   <component-grid>
     <component-title title="Button" />
     <component-code-block sourcecode="import { TipeButton } from '@tipe/ui'"/>
-    <attr-title title="Sizes"/>
+    <attr-title title="Size"/>
     <tipe-card class="flex">
       <tipe-button size="mini">Mini</tipe-button>
       <tipe-button size="small">Small</tipe-button>
@@ -10,7 +10,7 @@
       <tipe-button size="large">Large</tipe-button>
     </tipe-card>
     <component-code-block :sourcecode="sizeSourcecode"/>
-    <attr-title title="Colors"/>
+    <attr-title title="Color"/>
     <tipe-card class="flex">
       <tipe-button color="primary">Primary</tipe-button>
       <tipe-button color="success">Success</tipe-button>

@@ -17,6 +17,7 @@
         <li class="list-item"><nuxt-link class="link" to="/components/checkbox">Checkbox</nuxt-link></li>
         <li class="list-item"><nuxt-link class="link" to="/components/switch">Switch</nuxt-link></li>
         <li class="list-item"><nuxt-link class="link" to="/components/select">Select</nuxt-link></li>
+        <li class="list-item"><nuxt-link class="link" to="/components/select-button">Select Button</nuxt-link></li>
         <li class="list-item"><nuxt-link class="link" to="/components/search">Search</nuxt-link></li>
 
       </ul>

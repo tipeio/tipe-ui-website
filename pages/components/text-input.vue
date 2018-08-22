@@ -2,7 +2,7 @@
   <component-grid>
     <component-title title="Text Input" />
     <component-code-block sourcecode="import { TipeTextInput } from '@tipe/ui'"/>
-    <attr-title title="Sizes"/>
+    <attr-title title="Size"/>
     <tipe-card class="flex">
       <tipe-field label="small">
         <tipe-text-input size="small"/>

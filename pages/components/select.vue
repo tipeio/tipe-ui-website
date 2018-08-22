@@ -1,53 +1,62 @@
 <template>
   <component-grid>
     <component-title title="Select" />
-    <tipe-card><tipe-select/></tipe-card>
-    <h2 class="sub-title">Attributes</h2>
-    <ui-table :attributes="attributes" />
+    <component-code-block sourcecode="import { TipeSelect } from '@tipe/ui'"/>
+    <attr-title title="Size"/>
+    <tipe-card class="flex">
+      <tipe-select :options="options" placeholder="Select a Role" size="small"/>
+      <tipe-select :options="options" placeholder="Select a Role" size="medium"/>
+      <tipe-select :options="options" placeholder="Select a Role" size="large"/>
+    </tipe-card>
+    <component-code-block :sourcecode="sizeSourcecode"/>
+    <attr-title title="Status"/>
+    <tipe-card class="flex">
+      <tipe-select :options="options" placeholder="Select a Role" status="success"/>
+      <tipe-select :options="options" placeholder="Select a Role" status="warning"/>
+      <tipe-select :options="options" placeholder="Select a Role" status="error"/>
+    </tipe-card>
+    <component-code-block :sourcecode="sizeSourcecode"/>
   </component-grid>
 </template>
 
 <script>
 import { TipeCard, TipeSelect } from '@tipe/ui'
-import UiTable from '~/components/Table.vue'
 import ComponentTitle from '~/components/Component/Title.vue'
 import ComponentGrid from '~/components/Component/Grid.vue'
+import ComponentCodeBlock from '~/components/Component/CodeBlock.vue'
+import AttrTitle from '~/components/Component/AttrTitle.vue'
 
 export default {
   layout: 'docs',
   components: {
     TipeCard,
     TipeSelect,
-    UiTable,
     ComponentTitle,
-    ComponentGrid
+    ComponentGrid,
+    AttrTitle,
+    ComponentCodeBlock
   },
   data() {
     return {
-      attributes: [
-        {
-          name: 'color',
-          type: 'string',
-          desc: 'balh blah',
-          values: 'purple danger',
-          default: 'purple'
-        },
-        {
-          name: 'size',
-          type: 'string',
-          desc: 'balh blah',
-          values: 'purple danger',
-          default: 'purple'
-        }
-      ]
+      options: [
+        { label: 'Owner', value: 'owner' },
+        { label: 'Admin', value: 'admin' },
+        { label: 'Member', value: 'member' }
+      ],
+      sizeSourcecode: `<tipe-card>
+  <tipe-select :options="options" placeholder="Select a Role" size="small"/>
+  <tipe-select :options="options" placeholder="Select a Role" size="medium"/>
+  <tipe-select :options="options" placeholder="Select a Role" size="large"/>
+</tipe-card>`
     }
   }
 }
 </script>
 
 <style lang="postcss" scoped>
-.sub-title {
-  color: var(--text-purple);
-  font-size: 2rem;
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 </style>

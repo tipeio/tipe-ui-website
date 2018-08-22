@@ -53,13 +53,13 @@ export default {
     return {
       sizeSourcecode: `<tipe-card>
   <tipe-field label="small">
-    <tipe-text-input size="small">Small</tipe-text-input>
+    <tipe-text-input size="small"/>
   </tipe-field>
   <tipe-field label="medium">
-    <tipe-text-input size="medium">Medium</tipe-text-input>
+    <tipe-text-input size="medium"/>
   </tipe-field>
   <tipe-field label="large">
-    <tipe-text-input size="large">Large</tipe-text-input>
+    <tipe-text-input size="large"/>
   </tipe-field>
 </tipe-card>`,
       statusSourcecode: `<tipe-card>
@@ -89,7 +89,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  flex-wrap: wrap;
 }
 
 #status > input {
@@ -101,7 +100,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  flex-wrap: wrap;
 }
 
 #states > input {

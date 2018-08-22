@@ -53,13 +53,13 @@ export default {
     return {
       sizeSourcecode: `<tipe-card>
   <tipe-field label="small">
-    <tipe-textarea size="small">Small</tipe-textarea>
+    <tipe-textarea size="small"/>
   </tipe-field>
   <tipe-field label="medium">
-    <tipe-textarea size="medium">Medium</tipe-textarea>
+    <tipe-textarea size="medium"/>
   </tipe-field>
   <tipe-field label="large">
-    <tipe-textarea size="large">Large</tipe-textarea>
+    <tipe-textarea size="large"/>
   </tipe-field>
 </tipe-card>`,
       statusSourcecode: `<tipe-card>

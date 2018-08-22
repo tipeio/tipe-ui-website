@@ -1,6 +1,7 @@
 <template>
   <component-grid>
     <component-title title="Button" />
+    <component-code-block sourcecode="import { TipeButton } from '@tipe/ui'"/>
     <attr-title title="Sizes"/>
     <tipe-card class="flex">
       <tipe-button size="mini">Mini</tipe-button>
@@ -38,7 +39,6 @@
 
 <script>
 import { TipeCard, TipeButton } from '@tipe/ui'
-import UiTable from '~/components/Table.vue'
 import ComponentTitle from '~/components/Component/Title.vue'
 import ComponentGrid from '~/components/Component/Grid.vue'
 import ComponentCodeBlock from '~/components/Component/CodeBlock.vue'
@@ -48,7 +48,6 @@ export default {
   components: {
     TipeCard,
     TipeButton,
-    UiTable,
     ComponentTitle,
     ComponentGrid,
     ComponentCodeBlock,
@@ -56,22 +55,6 @@ export default {
   },
   data() {
     return {
-      attributes: [
-        {
-          name: 'color',
-          type: 'string',
-          desc: 'balh blah',
-          values: 'purple danger',
-          default: 'purple'
-        },
-        {
-          name: 'size',
-          type: 'string',
-          desc: 'balh blah',
-          values: 'purple danger',
-          default: 'purple'
-        }
-      ],
       sizeSourcecode: `<tipe-card>
   <tipe-button size="mini">Mini</tipe-button>
   <tipe-button size="small">Small</tipe-button>

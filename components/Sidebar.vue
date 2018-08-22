@@ -71,7 +71,7 @@ ul {
 
 .link {
   font-size: 1rem;
-  color: var(--text-gray);
+  color: var(--text-purple-gray);
   text-decoration: none;
   margin-left: 5px;
 }

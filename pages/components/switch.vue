@@ -1,53 +1,103 @@
 <template>
   <component-grid>
     <component-title title="Switch" />
-    <tipe-card><tipe-switch/></tipe-card>
-    <h2 class="sub-title">Attributes</h2>
-    <ui-table :attributes="attributes" />
+    <component-code-block sourcecode="import { TipeSwitch } from '@tipe/ui'"/>
+    <attr-title title="Size"/>
+    <tipe-card class="flex">
+      <tipe-switch label="small" size="small"/>
+      <tipe-switch label="medium" size="medium"/>
+      <tipe-switch label="large" size="large"/>
+    </tipe-card>
+    <component-code-block :sourcecode="sizeSourcecode"/>
+    <attr-title title="Status"/>
+    <tipe-card id="status">
+        <tipe-switch label="success" status="success" size="large"/>
+        <tipe-switch label="warning" status="warning" size="large"/>
+        <tipe-switch label="error" status="error" size="large"/>
+    </tipe-card>
+    <component-code-block :sourcecode="statusSourcecode"/>
+    <attr-title title="States"/>
+    <tipe-card id="states">
+        <tipe-switch label="disabled" size="large" disabled/>
+        <tipe-switch label="waiting" size="large" waiting/>
+    </tipe-card>
+    <component-code-block :sourcecode="stateSourcecode"/>
   </component-grid>
 </template>
 
 <script>
-import { TipeCard, TipeSwitch } from '@tipe/ui'
-import UiTable from '~/components/Table.vue'
+import { TipeCard, TipeSwitch, TipeField } from '@tipe/ui'
 import ComponentTitle from '~/components/Component/Title.vue'
 import ComponentGrid from '~/components/Component/Grid.vue'
+import ComponentCodeBlock from '~/components/Component/CodeBlock.vue'
+import AttrTitle from '~/components/Component/AttrTitle.vue'
 
 export default {
   layout: 'docs',
   components: {
     TipeCard,
     TipeSwitch,
-    UiTable,
     ComponentTitle,
-    ComponentGrid
+    ComponentGrid,
+    ComponentCodeBlock,
+    AttrTitle,
+    TipeField
   },
   data() {
     return {
-      attributes: [
-        {
-          name: 'color',
-          type: 'string',
-          desc: 'balh blah',
-          values: 'purple danger',
-          default: 'purple'
-        },
-        {
-          name: 'size',
-          type: 'string',
-          desc: 'balh blah',
-          values: 'purple danger',
-          default: 'purple'
-        }
-      ]
+      sizeSourcecode: `<tipe-card>
+  <tipe-switch label="small" size="small"/>
+  <tipe-switch label="medium" size="medium"/>
+  <tipe-switch label="large" size="large"/>
+</tipe-card>`,
+      statusSourcecode: `<tipe-card>
+  <tipe-switch label="success" status="success" label="large"/>
+  <tipe-switch label="warning" status="warning" label="large"/>
+  <tipe-switch label="error" status="error" label="large"/>
+</tipe-card>`,
+      stateSourcecode: `<tipe-card>
+  <tipe-switch label="disabled" label="large" disabled/>
+  <tipe-switch label="waiting" label="large" waiting/>
+</tipe-card>`
     }
   }
 }
 </script>
 
 <style lang="postcss" scoped>
-.sub-title {
-  color: var(--text-purple);
-  font-size: 2rem;
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.flex > div {
+  margin: 1rem;
+}
+
+#status {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#status > div {
+  margin: 1rem;
+}
+
+#states {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#states > div {
+  margin: 1rem;
 }
 </style>

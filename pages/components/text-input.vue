@@ -81,6 +81,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 #status {
@@ -88,6 +89,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 #status > input {
@@ -99,6 +101,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 #states > input {

@@ -24,15 +24,15 @@
     <component-code-block :sourcecode="stateSourcecode"/>
     <attr-title title="Min/Max"/>
     <tipe-card class="flex">
-      <tipe-number-input :min=0 placeholder="min"/>
-      <tipe-number-input :max=5 placeholder="max"/>
-      <tipe-number-input :min=-5 :max=5 placeholder="min/max"/>
+      <tipe-number-input min=0 placeholder="min"/>
+      <tipe-number-input max=5 placeholder="max"/>
+      <tipe-number-input min=-5 max=5 placeholder="min/max"/>
     </tipe-card>
     <component-code-block :sourcecode="minmaxSourcecode"/>
     <attr-title title="Step"/>
     <tipe-card class="flex">
-      <tipe-number-input :step=5 placeholder="5 step" />
-      <tipe-number-input :step=10 placeholder="10 step" />
+      <tipe-number-input step=5 placeholder="5 step" />
+      <tipe-number-input step=10 placeholder="10 step" />
     </tipe-card>
     <component-code-block :sourcecode="stepSourcecode"/>
   </component-grid>

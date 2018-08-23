@@ -1,26 +1,68 @@
 <template>
   <div :data-tipe-ui="$options.name" >
     <tipe-scroll class="sidebar">
-      <ul>
-        <li class="heading">Getting Started</li>
-        <li class="list-item"><nuxt-link class="link" to="/getting-started/install">Install</nuxt-link></li>
-        <li class="list-item"><nuxt-link class="link" to="/getting-started/quick-start">Quick Start</nuxt-link></li>
-        <li class="heading">Components</li>
-        <li class="sub-heading">Buttons</li>
-        <li class="list-item"><nuxt-link class="link" to="/components/button">Button</nuxt-link></li>
-        <li class="list-item"><nuxt-link class="link" to="/components/icon-button">Icon Button</nuxt-link></li>
-        <li class="sub-heading">Form</li>
-        <li class="list-item"><nuxt-link class="link" to="/components/text-input">Text Input</nuxt-link></li>
-        <li class="list-item"><nuxt-link class="link" to="/components/number-input">Number Input</nuxt-link></li>
-        <li class="list-item"><nuxt-link class="link" to="/components/textarea">Textarea</nuxt-link></li>
-        <li class="list-item"><nuxt-link class="link" to="/components/radio">Radio</nuxt-link></li>
-        <li class="list-item"><nuxt-link class="link" to="/components/checkbox">Checkbox</nuxt-link></li>
-        <li class="list-item"><nuxt-link class="link" to="/components/switch">Switch</nuxt-link></li>
-        <li class="list-item"><nuxt-link class="link" to="/components/select">Select</nuxt-link></li>
-        <li class="list-item"><nuxt-link class="link" to="/components/select-button">Select Button</nuxt-link></li>
-        <li class="list-item"><nuxt-link class="link" to="/components/search">Search</nuxt-link></li>
+      <div class="list">
+        <div class="item heading">Getting Started</div>
 
-      </ul>
+        <nuxt-link class="link" to="/getting-started/install">
+          <div class="item list-item">Install</div>
+        </nuxt-link>
+
+        <nuxt-link class="link" to="/getting-started/quick-start">
+          <div class="item list-item">Quick Start</div>
+        </nuxt-link>
+
+        <div class="item heading">Components</div>
+
+        <div class="item sub-heading">Buttons</div>
+
+        <nuxt-link class="link" to="/components/button">
+          <div class="item list-item">Button</div>
+        </nuxt-link>
+
+        <nuxt-link class="link" to="/components/icon-button">
+          <div class="item list-item">Icon Button</div>
+        </nuxt-link>
+
+        <div class="item sub-heading">Form</div>
+
+        <nuxt-link class="link" to="/components/text-input">
+          <div class="item list-item">Text Input</div>
+        </nuxt-link>
+
+        <nuxt-link class="link" to="/components/number-input">
+          <div class="item list-item">Number Input</div>
+        </nuxt-link>
+
+        <nuxt-link class="link" to="/components/textarea">
+          <div class="item list-item">Textarea</div>
+        </nuxt-link>
+
+        <nuxt-link class="link" to="/components/radio">
+          <div class="item list-item">Radio</div>
+        </nuxt-link>
+
+        <nuxt-link class="link" to="/components/checkbox">
+          <div class="item list-item">Checkbox</div>
+        </nuxt-link>
+
+        <nuxt-link class="link" to="/components/switch">
+          <div class="item list-item">Switch</div>
+        </nuxt-link>
+
+        <nuxt-link class="link" to="/components/select">
+          <div class="item list-item">Select</div>
+        </nuxt-link>
+
+        <nuxt-link class="link" to="/components/select-button">
+          <div class="item list-item">Select Button</div>
+        </nuxt-link>
+
+        <nuxt-link class="link" to="/components/search">
+          <div class="item list-item">Search</div>
+        </nuxt-link>
+
+      </div>
     </tipe-scroll>
   </div>
 </template>
@@ -50,41 +92,40 @@ export default {
   padding-top: 3rem;
 }
 
-ul {
-  list-style: none;
+.list {
   padding: 0;
   margin: 0;
 
-  & li {
-    height: 2rem;
+  & .link {
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  & .item {
     padding: 0;
     display: flex;
     align-items: center;
+    height: 2rem;
   }
-}
 
-.heading {
-  color: var(--text-purple);
-  font-size: 1.2rem;
-  font-weight: 700;
-  height: 2.5rem;
-}
-
-.link {
-  font-size: 1rem;
-  color: var(--text-purple-gray);
-  text-decoration: none;
-  margin-left: 5px;
+  & .list-item {
+    color: var(--text-purple-gray);
+    padding-left: 5px;
+  }
+  & .heading {
+    color: var(--text-purple);
+    font-size: 1.2rem;
+    font-weight: 700;
+    height: 2.5rem;
+  }
+  & .sub-heading {
+    font-size: 0.8rem;
+    color: var(--text-black);
+    font-weight: 500;
+  }
 }
 
 .list-item:hover {
   background-color: #e6ebff;
   border-right: 3px solid var(--dark-purple);
-}
-
-.sub-heading {
-  font-size: 0.8rem;
-  color: var(--text-black);
-  font-weight: 500;
 }
 </style>

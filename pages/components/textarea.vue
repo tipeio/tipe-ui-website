@@ -33,13 +33,10 @@
 
 <script>
 import { TipeCard, TipeTextarea, TipeField } from '@tipe/ui'
-import {
-  AttrTitle,
-  AttrDesc,
-  ComponentCodeBlock,
-  ComponentGrid,
-  ComponentTitle
-} from '~/components/Component'
+import ComponentTitle from '~/components/Component/Title.vue'
+import ComponentGrid from '~/components/Component/Grid.vue'
+import ComponentCodeBlock from '~/components/Component/CodeBlock.vue'
+import AttrTitle from '~/components/Component/AttrTitle.vue'
 
 export default {
   layout: 'docs',

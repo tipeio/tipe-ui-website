@@ -19,5 +19,6 @@ export default {
 [data-tipe-ui='ComponentCodeBlock'] {
   display: flex;
   background-color: var(--light-purple);
+  overflow-x: scroll;
 }
 </style>

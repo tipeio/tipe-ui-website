@@ -3,6 +3,7 @@
     <component-title title="Button" />
     <component-code-block sourcecode="import { TipeButton } from '@tipe/ui'"/>
     <attr-title title="Size"/>
+    <attr-desc text="Size"/>
     <tipe-card class="flex">
       <tipe-button size="mini">Mini</tipe-button>
       <tipe-button size="small">Small</tipe-button>
@@ -39,10 +40,14 @@
 
 <script>
 import { TipeCard, TipeButton } from '@tipe/ui'
-import ComponentTitle from '~/components/Component/Title.vue'
-import ComponentGrid from '~/components/Component/Grid.vue'
-import ComponentCodeBlock from '~/components/Component/CodeBlock.vue'
-import AttrTitle from '~/components/Component/AttrTitle.vue'
+import {
+  AttrTitle,
+  AttrDesc,
+  ComponentCodeBlock,
+  ComponentGrid,
+  ComponentTitle
+} from '~/components/Component'
+
 export default {
   layout: 'docs',
   components: {
@@ -51,7 +56,8 @@ export default {
     ComponentTitle,
     ComponentGrid,
     ComponentCodeBlock,
-    AttrTitle
+    AttrTitle,
+    AttrDesc
   },
   data() {
     return {

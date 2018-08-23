@@ -1,68 +1,68 @@
 <template>
   <div :data-tipe-ui="$options.name" >
     <tipe-scroll class="sidebar">
-      <div class="list">
-        <div class="item heading">Getting Started</div>
+      <List>
+        <Heading>Getting Started</Heading>
 
-        <nuxt-link class="link" to="/getting-started/install">
-          <div class="item list-item">Install</div>
+        <nuxt-link to="/getting-started/install">
+          <Item>Install</Item>
         </nuxt-link>
 
-        <nuxt-link class="link" to="/getting-started/quick-start">
-          <div class="item list-item">Quick Start</div>
+        <nuxt-link to="/getting-started/quick-start">
+          <Item>Quick Start</Item>
         </nuxt-link>
 
-        <div class="item heading">Components</div>
+        <Heading>Components</Heading>
 
-        <div class="item sub-heading">Buttons</div>
+        <SubHeading>Buttons</SubHeading>
 
-        <nuxt-link class="link" to="/components/button">
-          <div class="item list-item">Button</div>
+        <nuxt-link to="/components/button">
+          <Item>Button</Item>
         </nuxt-link>
 
-        <nuxt-link class="link" to="/components/icon-button">
-          <div class="item list-item">Icon Button</div>
+        <nuxt-link to="/components/icon-button">
+          <Item>Icon Button</Item>
         </nuxt-link>
 
-        <div class="item sub-heading">Form</div>
+        <SubHeading>Form</SubHeading>
 
-        <nuxt-link class="link" to="/components/text-input">
-          <div class="item list-item">Text Input</div>
+        <nuxt-link to="/components/text-input">
+          <Item>Text Input</Item>
         </nuxt-link>
 
-        <nuxt-link class="link" to="/components/number-input">
-          <div class="item list-item">Number Input</div>
+        <nuxt-link to="/components/number-input">
+          <Item>Number Input</Item>
         </nuxt-link>
 
-        <nuxt-link class="link" to="/components/textarea">
-          <div class="item list-item">Textarea</div>
+        <nuxt-link to="/components/textarea">
+          <Item>Textarea</Item>
         </nuxt-link>
 
-        <nuxt-link class="link" to="/components/radio">
-          <div class="item list-item">Radio</div>
+        <nuxt-link to="/components/radio">
+          <Item>Radio</Item>
         </nuxt-link>
 
-        <nuxt-link class="link" to="/components/checkbox">
-          <div class="item list-item">Checkbox</div>
+        <nuxt-link to="/components/checkbox">
+          <Item>Checkbox</Item>
         </nuxt-link>
 
-        <nuxt-link class="link" to="/components/switch">
-          <div class="item list-item">Switch</div>
+        <nuxt-link to="/components/switch">
+          <Item>Switch</Item>
         </nuxt-link>
 
-        <nuxt-link class="link" to="/components/select">
-          <div class="item list-item">Select</div>
+        <nuxt-link to="/components/select">
+          <Item>Select</Item>
         </nuxt-link>
 
-        <nuxt-link class="link" to="/components/select-button">
-          <div class="item list-item">Select Button</div>
+        <nuxt-link to="/components/select-button">
+          <Item>Select Button</Item>
         </nuxt-link>
 
-        <nuxt-link class="link" to="/components/search">
-          <div class="item list-item">Search</div>
+        <nuxt-link to="/components/search">
+          <Item>Search</Item>
         </nuxt-link>
 
-      </div>
+      </List>
     </tipe-scroll>
   </div>
 </template>
@@ -70,11 +70,19 @@
 <script>
 import vueTypes from 'vue-types'
 import TipeScroll from './Component/Scroll.vue'
+import List from './List/List.vue'
+import Heading from './List/Heading.vue'
+import SubHeading from './List/SubHeading.vue'
+import Item from './List/Item.vue'
 
 export default {
   name: 'UiSidebar',
   components: {
-    TipeScroll
+    TipeScroll,
+    List,
+    Heading,
+    SubHeading,
+    Item
   }
 }
 </script>
@@ -90,42 +98,5 @@ export default {
   border-radius: 6px;
   padding-left: 3rem;
   padding-top: 3rem;
-}
-
-.list {
-  padding: 0;
-  margin: 0;
-
-  & .link {
-    font-size: 1rem;
-    text-decoration: none;
-  }
-  & .item {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    height: 2rem;
-  }
-
-  & .list-item {
-    color: var(--text-purple-gray);
-    padding-left: 5px;
-  }
-  & .heading {
-    color: var(--text-purple);
-    font-size: 1.2rem;
-    font-weight: 700;
-    height: 2.5rem;
-  }
-  & .sub-heading {
-    font-size: 0.8rem;
-    color: var(--text-black);
-    font-weight: 500;
-  }
-}
-
-.list-item:hover {
-  background-color: #e6ebff;
-  border-right: 3px solid var(--dark-purple);
 }
 </style>

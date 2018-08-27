@@ -6,11 +6,9 @@
     </nuxt-link>
     <search-input class="grid-search" />
     <div class="right">
-      <nav-dropdown :links="versions" text="1.0.0"/>      
       <nav-link to="/guide" :active="$nuxt.$route.path.includes('guide')" text="Guide"/>
       <nav-link to="/component/quick-start" :active="$nuxt.$route.path.includes('component')" text="Component"/>
       <nav-link to="/resource" :active="$nuxt.$route.path.includes('resource')" text="Resource"/>
-      <nav-dropdown :links="languages" text="English"/>      
     </div>
   </nav>
 </template>
@@ -53,7 +51,6 @@ export default {
 [data-tipe-ui='UiNav'] {
   display: grid;
   align-items: center;
-  justify-content: end;
   grid-column-gap: 1rem;
   background: var(--purple-gradient);
   height: 100px;

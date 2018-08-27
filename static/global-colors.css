@@ -1,11 +1,18 @@
 :root {
   --light-purple: #fafbff;
   --dark-purple: #6047fa;
+<<<<<<< HEAD
   --teal: #1cc5bc;
   --purple-gradient: linear-gradient(
     -136deg,
     #714bfe 9%,
     #6047fa 55%,
+=======
+  --purple-gradient: radial-gradient(
+    circle,
+    #714bfe 0%,
+    #6047fa 51.09%,
+>>>>>>> feat(nav): add nav component and nav link component
     #5727e1 100%
   );
   --text-purple: #1f346c;

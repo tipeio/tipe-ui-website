@@ -5,11 +5,9 @@
       <h1 class="tipe-text">Tipe</h1>
     </nuxt-link>
     <div class="right">
-      <nav-dropdown :links="versions" text="1.0.0"/>      
       <nav-link to="/guide" :active="$nuxt.$route.path.includes('guide')" text="Guide"/>
       <nav-link to="/component" :active="$nuxt.$route.path.includes('component')" text="Component"/>
       <nav-link to="/resource" :active="$nuxt.$route.path.includes('resource')" text="Resource"/>
-      <nav-dropdown :links="languages" text="English"/>      
     </div>
   </nav>
 </template>
@@ -18,7 +16,6 @@
 import vueTypes from 'vue-types'
 import { TipeSearch } from '@tipe/ui'
 import NavLink from './NavLink.vue'
-import NavDropdown from './NavDropdown.vue'
 import TipeLogo from '~/assets/tipe-logo.svg'
 
 export default {
@@ -26,21 +23,7 @@ export default {
   components: {
     TipeLogo,
     TipeSearch,
-    NavLink,
-    NavDropdown
-  },
-  data() {
-    return {
-      languages: [
-        { path: '/language/english', name: 'English' },
-        { path: '/language/spanish', name: 'Spanish' }
-      ],
-      versions: [
-        { path: '/version/1.0.1', name: '1.0.1' },
-        { path: '/version/1.0.2', name: '1.0.2' },
-        { path: '/version/1.0.3', name: '1.0.3' }
-      ]
-    }
+    NavLink
   }
 }
 </script>
@@ -49,12 +32,11 @@ export default {
 [data-tipe-ui='UiNav'] {
   display: grid;
   align-items: center;
-  justify-content: end;
   grid-column-gap: 1rem;
   background: var(--purple-gradient);
   height: 100px;
-  grid-template-columns: 100px auto 1fr 2fr 100px;
-  grid-template-areas: '. logo . right .';
+  grid-template-columns: 1fr 2fr 5fr 1fr;
+  grid-template-areas: '. logo right right';
 }
 
 .tipe-text {

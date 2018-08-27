@@ -9,7 +9,13 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Docs for tipe-ui' }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        href: 'https://fonts.googleapis.com/css?family=Lato',
+        rel: 'stylesheet'
+      }
+    ]
   },
   /*
   ** Customize the progress bar color

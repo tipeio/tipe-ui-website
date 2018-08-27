@@ -44,7 +44,7 @@ import ComponentTitle from '~/components/Component/Title.vue'
 import ComponentGrid from '~/components/Component/Grid.vue'
 import ComponentCodeBlock from '~/components/Component/CodeBlock.vue'
 import AttrTitle from '~/components/Component/AttrTitle.vue'
-import AttrDesc from '~/components/Component/AttrTitle.vue'
+import AttrDesc from '~/components/Component/AttrDesc.vue'
 
 export default {
   layout: 'docs',

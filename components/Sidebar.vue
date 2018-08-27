@@ -4,11 +4,11 @@
       <List>
         <Heading>Getting Started</Heading>
 
-        <nuxt-link to="/getting-started/install">
+        <nuxt-link to="/component/install">
           <Item>Install</Item>
         </nuxt-link>
 
-        <nuxt-link to="/getting-started/quick-start">
+        <nuxt-link to="/component/quick-start">
           <Item>Quick Start</Item>
         </nuxt-link>
 
@@ -16,49 +16,49 @@
 
         <SubHeading>Buttons</SubHeading>
 
-        <nuxt-link to="/components/button">
+        <nuxt-link to="/component/button">
           <Item>Button</Item>
         </nuxt-link>
 
-        <nuxt-link to="/components/icon-button">
+        <nuxt-link to="/component/icon-button">
           <Item>Icon Button</Item>
         </nuxt-link>
 
         <SubHeading>Form</SubHeading>
 
-        <nuxt-link to="/components/text-input">
+        <nuxt-link to="/component/text-input">
           <Item>Text Input</Item>
         </nuxt-link>
 
-        <nuxt-link to="/components/number-input">
+        <nuxt-link to="/component/number-input">
           <Item>Number Input</Item>
         </nuxt-link>
 
-        <nuxt-link to="/components/textarea">
+        <nuxt-link to="/component/textarea">
           <Item>Textarea</Item>
         </nuxt-link>
 
-        <nuxt-link to="/components/radio">
+        <nuxt-link to="/component/radio">
           <Item>Radio</Item>
         </nuxt-link>
 
-        <nuxt-link to="/components/checkbox">
+        <nuxt-link to="/component/checkbox">
           <Item>Checkbox</Item>
         </nuxt-link>
 
-        <nuxt-link to="/components/switch">
+        <nuxt-link to="/component/switch">
           <Item>Switch</Item>
         </nuxt-link>
 
-        <nuxt-link to="/components/select">
+        <nuxt-link to="/component/select">
           <Item>Select</Item>
         </nuxt-link>
 
-        <nuxt-link to="/components/select-button">
+        <nuxt-link to="/component/select-button">
           <Item>Select Button</Item>
         </nuxt-link>
 
-        <nuxt-link to="/components/search">
+        <nuxt-link to="/component/search">
           <Item>Search</Item>
         </nuxt-link>
 

@@ -23,9 +23,8 @@ export default {
   min-height: 100vh;
   display: grid;
   grid-column-gap: 1rem;
-  grid-row-gap: 2rem;
   grid-template-columns: 1fr 2fr 5fr 1fr;
-  grid-auto-rows: 70px 1fr;
+  grid-auto-rows: 100px 1fr;
   grid-template-areas:
     ' . nav nav .'
     '. sidebar content .';

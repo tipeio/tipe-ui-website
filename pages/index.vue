@@ -1,7 +1,7 @@
 <template>
   <div>
   <h1>Home Page</h1>
-  <nuxt-link to="/getting-started/install">Docs</nuxt-link>
+  <nuxt-link to="/component/install">Docs</nuxt-link>
   </div>
 </template>
 

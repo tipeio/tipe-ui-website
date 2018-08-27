@@ -27,13 +27,17 @@ export default {
 
   & .tipe-list-list-item {
     color: var(--text-purple-gray);
-    padding-left: 5px;
+    font-family: Lato, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
   }
   & .tipe-list-heading {
     color: var(--text-purple);
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 1.125rem;
+    font-weight: bold;
     height: 2.5rem;
+    font-family: Lato, sans-serif;
+    line-height: 22px;
   }
   & .tipe-list-sub-heading {
     font-size: 0.8rem;
@@ -43,7 +47,10 @@ export default {
 }
 
 .tipe-list-list-item:hover {
-  background-color: #e6ebff;
-  border-right: 3px solid var(--dark-purple);
+  opacity: 0.7;
+}
+
+.tipe-list-list-item.active {
+  color: var(--text-teal);
 }
 </style>

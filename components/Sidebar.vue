@@ -93,10 +93,8 @@ export default {
 
 .sidebar {
   height: 100%;
-  background-color: var(--light-purple);
-  border: 1px solid var(--light-purple);
-  border-radius: 6px;
   padding-left: 3rem;
   padding-top: 3rem;
+  border-right: 1px solid rgba(56, 74, 101, 0.5);
 }
 </style>

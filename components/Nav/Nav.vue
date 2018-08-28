@@ -4,6 +4,7 @@
       <tipe-logo  />
       <h1 class="tipe-text">Tipe</h1>
     </nuxt-link>
+    <search-input class="grid-search" />
     <div class="right">
       <nav-dropdown :links="versions" text="1.0.0"/>      
       <nav-link to="/guide" :active="$nuxt.$route.path.includes('guide')" text="Guide"/>
@@ -16,18 +17,18 @@
 
 <script>
 import vueTypes from 'vue-types'
-import { TipeSearch } from '@tipe/ui'
 import NavLink from './NavLink.vue'
 import NavDropdown from './NavDropdown.vue'
+import SearchInput from './SearchInput.vue'
 import TipeLogo from '~/assets/tipe-logo.svg'
 
 export default {
   name: 'UiNav',
   components: {
     TipeLogo,
-    TipeSearch,
     NavLink,
-    NavDropdown
+    NavDropdown,
+    SearchInput
   },
   data() {
     return {
@@ -54,7 +55,7 @@ export default {
   background: var(--purple-gradient);
   height: 100px;
   grid-template-columns: 100px auto 1fr 2fr 100px;
-  grid-template-areas: '. logo . right .';
+  grid-template-areas: '. logo search right .';
 }
 
 .tipe-text {

@@ -27,8 +27,13 @@ export default {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  margin-right: 27px;
-  margin-left: 27px;
+  margin: 0 10px;
+}
+
+@media screen and (min-width: 1500px) {
+  .nav-link {
+    margin: 0 27px;
+  }
 }
 
 .active {

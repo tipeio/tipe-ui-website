@@ -12,7 +12,7 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
-        href: 'https://fonts.googleapis.com/css?family=Lato',
+        href: 'https://fonts.googleapis.com/css?family=Lato|Poppins',
         rel: 'stylesheet'
       }
     ]

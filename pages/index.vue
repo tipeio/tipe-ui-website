@@ -1,7 +1,8 @@
 <template>
   <div class="outter-grid">
     <section class="header-content">
-      <ui-nav transparent/>
+      <stars class="stars" />
+      <ui-nav class="home-nav" transparent/>
       <div class="container">
         <h1 class="title">Flexible Ui Library</h1>
         <h2 class="subtitle">Focus on your code while designers, writers, and content specialists take care of the message</h2>
@@ -10,7 +11,7 @@
           <ui-button outline text="Github (v1.0.0)"/>
         </div>
       </div>
-      <space-people />
+      <space-people class="space"/>
     </section>
   </div>
 </template>
@@ -19,12 +20,14 @@
 import UiNav from '~/components/Nav'
 import UiButton from '~/components/Component/Button.vue'
 import SpacePeople from '~/assets/space-people.svg'
+import Stars from '~/assets/stars.svg'
 
 export default {
   components: {
     UiNav,
     SpacePeople,
-    UiButton
+    UiButton,
+    Stars
   }
 }
 </script>
@@ -38,11 +41,13 @@ export default {
 }
 
 .header-content {
+  z-index: 2;
   grid-area: header;
   background: var(--purple-gradient);
   border-radius: 0 0 50% 50% / 15%;
   display: grid;
-  grid-row-gap: 2rem;
+  grid-template-rows: auto 60px auto 60px auto;
+  grid-template-areas: 'nav' '.' 'content' 'content' 'space';
 }
 
 .title {
@@ -69,10 +74,27 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 }
 
 .container {
   display: grid;
   grid-row-gap: 1.4375rem;
+  grid-area: content;
+}
+
+.stars {
+  z-index: 1;
+  position: absolute;
+}
+
+.home-nav {
+  z-index: 2;
+  grid-area: nav;
+}
+
+.space {
+  grid-area: space;
+  grid-row-start: 4;
 }
 </style>

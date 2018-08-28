@@ -5,10 +5,14 @@
       <down-arrow class="icon"/>
     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ul class="dropdown" v-if="!hidden" v-on-clickaway="away">
 =======
     <ul class="dropdown" v-if="!hidden">
 >>>>>>> fix(nav-dropdown): fix clicking on nav dropdown link
+=======
+    <ul class="dropdown" v-if="!hidden" v-on-clickaway="away">
+>>>>>>> polish(nav-dropdown): add click away close behavior too nav dropdown
       <nuxt-link @click="hidden = true" v-for="(link, index) in links" :key="link.path" :to="link.path" :class="{last: index === links.length -1}">{{link.name}}</nuxt-link>
     </ul>
   </div>
@@ -49,7 +53,6 @@ export default {
 .wrapper {
   display: flex;
   align-items: center;
-<<<<<<< HEAD
   margin: 0 10px;
   flex-direction: column;
 }
@@ -60,13 +63,6 @@ export default {
   }
 }
 
-=======
-  margin-right: 27px;
-  margin-left: 27px;
-  flex-direction: column;
-}
-
->>>>>>> polish(nav-dropdown): add correct styling to nav dropdown
 .wrapper:hover {
   cursor: pointer;
 }

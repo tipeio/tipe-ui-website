@@ -4,7 +4,7 @@
       <a class="nav-link">{{text}}</a>
       <down-arrow class="icon"/>
     </div>
-    <ul class="dropdown" v-if="!hidden">
+    <ul class="dropdown" v-if="!hidden" v-on-clickaway="away">
       <nuxt-link @click="hidden = true" v-for="(link, index) in links" :key="link.path" :to="link.path" :class="{last: index === links.length -1}">{{link.name}}</nuxt-link>
     </ul>
   </div>
@@ -13,6 +13,7 @@
 
 <script>
 import vueTypes from 'vue-types'
+import { directive as onClickaway } from 'vue-clickaway'
 import DownArrow from '~/assets/down-arrow.svg'
 
 export default {
@@ -24,9 +25,17 @@ export default {
     text: vueTypes.string.def(''),
     links: vueTypes.array
   },
+  directives: {
+    onClickaway: onClickaway
+  },
   data() {
     return {
       hidden: true
+    }
+  },
+  methods: {
+    away() {
+      this.hidden = true
     }
   }
 }

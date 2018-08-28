@@ -1,11 +1,11 @@
 <template>
   <div class="wrapper">
-    <div class="row">
-      <a @click="hidden = !hidden" class="nav-link">{{text}}</a>
+    <div @click="hidden = !hidden" class="row">
+      <a class="nav-link">{{text}}</a>
       <down-arrow class="icon"/>
     </div>
     <ul class="dropdown" v-if="!hidden">
-      <li v-for="link in links" :key="link.path"><nuxt-link :to="link.path">{{link.name}}</nuxt-link></li>
+      <li @click="hidden = true" v-for="(link, index) in links" :key="link.path" :class="{last: index === links.length -1}"><nuxt-link :to="link.path">{{link.name}}</nuxt-link></li>
     </ul>
   </div>
 
@@ -34,10 +34,17 @@ export default {
 
 <style lang="postcss" scoped>
 .wrapper {
-  width: 100%;
   display: flex;
   align-items: center;
+  margin-right: 27px;
+  margin-left: 27px;
+  flex-direction: column;
 }
+
+.wrapper:hover {
+  cursor: pointer;
+}
+
 .nav-link {
   opacity: 0.7;
   color: #ffffff;
@@ -61,15 +68,41 @@ export default {
   align-items: center;
   justify-content: start;
   background-color: #fff;
-  position: absolute;
-  z-index: 2;
   padding: 0;
+  z-index: 2;
+  position: absolute;
+  margin-top: 4rem;
+  width: 148px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 3px 10px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .dropdown > li {
   list-style-type: none;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.dropdown > li:hover {
+  background-color: #f7f8fb;
+  border-left: 3px solid #1cc5bc;
+  padding-right: 3px;
+}
+
+.dropdown > .last:hover {
+  border-radius: 0 0 4px 0;
+}
+
+.dropdown > li > a {
   text-decoration: none;
-  color: black;
+  color: #627098;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 0.8125rem;
 }
 
 .row {
@@ -80,6 +113,6 @@ export default {
 }
 
 .icon {
-  margin-left: 1rem;
+  margin-left: 5px;
 }
 </style>

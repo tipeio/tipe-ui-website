@@ -41,6 +41,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: width 500ms;
 }
 
 .open {

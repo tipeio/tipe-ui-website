@@ -54,8 +54,15 @@ export default {
   grid-column-gap: 1rem;
   background: var(--purple-gradient);
   height: 100px;
-  grid-template-columns: 100px auto 1fr 2fr 100px;
+  grid-template-columns: 1rem auto 1fr 2fr 1rem;
   grid-template-areas: '. logo search right .';
+}
+
+@media screen and (min-width: 1500px) {
+  [data-tipe-ui='UiNav'] {
+    grid-template-columns: 100px auto 1fr 2fr 100px;
+    grid-template-areas: '. logo search right .';
+  }
 }
 
 .tipe-text {

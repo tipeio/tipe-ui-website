@@ -26,8 +26,9 @@ export default {
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  width: 100%;
   text-align: center;
+  margin-right: 27px;
+  margin-left: 27px;
 }
 
 .active {

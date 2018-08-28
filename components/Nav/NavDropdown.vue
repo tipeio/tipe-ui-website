@@ -45,6 +45,7 @@ export default {
 .wrapper {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   margin: 0 10px;
   flex-direction: column;
 }
@@ -55,6 +56,13 @@ export default {
   }
 }
 
+=======
+  margin-right: 27px;
+  margin-left: 27px;
+  flex-direction: column;
+}
+
+>>>>>>> polish(nav-dropdown): add correct styling to nav dropdown
 .wrapper:hover {
   cursor: pointer;
 }
@@ -95,11 +103,28 @@ export default {
   align-items: center;
   justify-content: center;
   width: 100%;
+<<<<<<< HEAD
+=======
+}
+
+.dropdown > li:hover {
+  background-color: #f7f8fb;
+  border-left: 3px solid #1cc5bc;
+  padding-right: 3px;
+}
+
+.dropdown > .last:hover {
+  border-radius: 0 0 4px 0;
+}
+
+.dropdown > li > a {
+>>>>>>> polish(nav-dropdown): add correct styling to nav dropdown
   text-decoration: none;
   color: #627098;
   font-family: 'Lato', sans-serif;
   letter-spacing: 0.5px;
   font-size: 0.8125rem;
+<<<<<<< HEAD
 }
 
 .dropdown > a:hover {
@@ -110,6 +135,8 @@ export default {
 
 .dropdown > .last:hover {
   border-radius: 0 0 4px 0;
+=======
+>>>>>>> polish(nav-dropdown): add correct styling to nav dropdown
 }
 
 .row {

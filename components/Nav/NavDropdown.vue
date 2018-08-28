@@ -5,7 +5,7 @@
       <down-arrow class="icon"/>
     </div>
     <ul class="dropdown" v-if="!hidden">
-      <li @click="hidden = true" v-for="(link, index) in links" :key="link.path" :class="{last: index === links.length -1}"><nuxt-link :to="link.path">{{link.name}}</nuxt-link></li>
+      <nuxt-link @click="hidden = true" v-for="(link, index) in links" :key="link.path" :to="link.path" :class="{last: index === links.length -1}">{{link.name}}</nuxt-link>
     </ul>
   </div>
 
@@ -78,16 +78,21 @@ export default {
   box-shadow: 3px 10px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-.dropdown > li {
+.dropdown > a {
   list-style-type: none;
   height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+  text-decoration: none;
+  color: #627098;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 0.8125rem;
 }
 
-.dropdown > li:hover {
+.dropdown > a:hover {
   background-color: #f7f8fb;
   border-left: 3px solid #1cc5bc;
   padding-right: 3px;
@@ -95,14 +100,6 @@ export default {
 
 .dropdown > .last:hover {
   border-radius: 0 0 4px 0;
-}
-
-.dropdown > li > a {
-  text-decoration: none;
-  color: #627098;
-  font-family: 'Lato', sans-serif;
-  letter-spacing: 0.5px;
-  font-size: 0.8125rem;
 }
 
 .row {

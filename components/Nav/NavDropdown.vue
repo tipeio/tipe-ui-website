@@ -45,9 +45,14 @@ export default {
 .wrapper {
   display: flex;
   align-items: center;
-  margin-right: 27px;
-  margin-left: 27px;
+  margin: 0 10px;
   flex-direction: column;
+}
+
+@media screen and (min-width: 1500px) {
+  .wrapper {
+    margin: 0 27px;
+  }
 }
 
 .wrapper:hover {
@@ -64,10 +69,6 @@ export default {
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-}
-
-.active {
-  opacity: 1;
 }
 
 .dropdown {

@@ -4,15 +4,7 @@
       <a class="nav-link">{{text}}</a>
       <down-arrow class="icon"/>
     </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
     <ul class="dropdown" v-if="!hidden" v-on-clickaway="away">
-=======
-    <ul class="dropdown" v-if="!hidden">
->>>>>>> fix(nav-dropdown): fix clicking on nav dropdown link
-=======
-    <ul class="dropdown" v-if="!hidden" v-on-clickaway="away">
->>>>>>> polish(nav-dropdown): add click away close behavior too nav dropdown
       <nuxt-link @click="hidden = true" v-for="(link, index) in links" :key="link.path" :to="link.path" :class="{last: index === links.length -1}">{{link.name}}</nuxt-link>
     </ul>
   </div>
@@ -103,16 +95,11 @@ export default {
   align-items: center;
   justify-content: center;
   width: 100%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
   text-decoration: none;
   color: #627098;
   font-family: 'Lato', sans-serif;
   letter-spacing: 0.5px;
   font-size: 0.8125rem;
->>>>>>> fix(nav-dropdown): fix clicking on nav dropdown link
 }
 
 .dropdown > a:hover {
@@ -125,31 +112,12 @@ export default {
   border-radius: 0 0 4px 0;
 }
 
-<<<<<<< HEAD
-.dropdown > li > a {
->>>>>>> polish(nav-dropdown): add correct styling to nav dropdown
-  text-decoration: none;
-  color: #627098;
-  font-family: 'Lato', sans-serif;
-  letter-spacing: 0.5px;
-  font-size: 0.8125rem;
-<<<<<<< HEAD
-}
-
 .dropdown > a:hover {
   background-color: #f7f8fb;
   border-left: 3px solid #1cc5bc;
   padding-right: 3px;
 }
 
-.dropdown > .last:hover {
-  border-radius: 0 0 4px 0;
-=======
->>>>>>> polish(nav-dropdown): add correct styling to nav dropdown
-}
-
-=======
->>>>>>> fix(nav-dropdown): fix clicking on nav dropdown link
 .row {
   display: flex;
   align-items: center;

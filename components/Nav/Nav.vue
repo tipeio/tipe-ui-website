@@ -1,5 +1,5 @@
 <template>
-  <nav :data-tipe-ui="$options.name" class="nav">
+  <nav :data-tipe-ui="$options.name" class="nav" :class="{transparent}">
     <nuxt-link to="/" class="grid-logo">
       <tipe-logo  />
       <h1 class="tipe-text">Tipe</h1>
@@ -8,7 +8,7 @@
     <div class="right">
       <nav-dropdown :links="versions" text="1.0.0"/>      
       <nav-link to="/guide" :active="$nuxt.$route.path.includes('guide')" text="Guide"/>
-      <nav-link to="/component" :active="$nuxt.$route.path.includes('component')" text="Component"/>
+      <nav-link to="/component/quick-start" :active="$nuxt.$route.path.includes('component')" text="Component"/>
       <nav-link to="/resource" :active="$nuxt.$route.path.includes('resource')" text="Resource"/>
       <nav-dropdown :links="languages" text="English"/>      
     </div>
@@ -29,6 +29,9 @@ export default {
     NavLink,
     NavDropdown,
     SearchInput
+  },
+  props: {
+    transparent: vueTypes.bool.def(false)
   },
   data() {
     return {
@@ -98,5 +101,9 @@ export default {
   grid-area: right;
   display: flex;
   justify-content: space-evenly;
+}
+
+.transparent {
+  background: none;
 }
 </style>

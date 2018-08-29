@@ -9,7 +9,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import UiButton from './Button.vue'
+import UiButton from '~/components/Component/Button.vue'
 import Guide from '~/assets/guide.svg'
 import ComponentSvg from '~/assets/component.svg'
 import Resources from '~/assets/resources.svg'

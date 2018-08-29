@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div @click="hidden = !hidden" class="row">
-      <a class="nav-link">{{text}}</a>
+      <a class="nav-link" :class="{'footer-link': footer}">{{text}}</a>
       <down-arrow class="icon"/>
     </div>
     <ul class="dropdown" v-if="!hidden" v-on-clickaway="away">
@@ -23,7 +23,8 @@ export default {
   },
   props: {
     text: vueTypes.string.def(''),
-    links: vueTypes.array
+    links: vueTypes.array,
+    footer: vueTypes.bool.def(false)
   },
   directives: {
     onClickaway: onClickaway
@@ -69,6 +70,11 @@ export default {
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.footer-link {
+  font-size: 1rem;
+  opacity: 1;
 }
 
 .dropdown {
@@ -126,6 +132,6 @@ export default {
 }
 
 .icon {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 </style>

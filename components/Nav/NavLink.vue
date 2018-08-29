@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="to" class="nav-link" :class="{active}">{{text}}</nuxt-link>
+  <nuxt-link :to="to" class="nav-link" :class="{active, 'footer-link': footer}">{{text}}</nuxt-link>
 </template>
 
 <script>
@@ -10,7 +10,8 @@ export default {
   props: {
     text: vueTypes.string.def(''),
     to: vueTypes.string.required,
-    active: vueTypes.bool.def(false)
+    active: vueTypes.bool.def(false),
+    footer: vueTypes.bool.def(false)
   }
 }
 </script>
@@ -28,6 +29,11 @@ export default {
   text-decoration: none;
   text-align: center;
   margin: 0 10px;
+}
+
+.footer-link {
+  font-size: 1rem;
+  opacity: 1;
 }
 
 @media screen and (min-width: 1500px) {

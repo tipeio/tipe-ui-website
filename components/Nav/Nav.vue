@@ -24,9 +24,7 @@ export default {
   name: 'UiNav',
   components: {
     TipeLogo,
-    NavLink,
-    NavDropdown,
-    SearchInput
+    NavLink
   },
   props: {
     transparent: vueTypes.bool.def(false)

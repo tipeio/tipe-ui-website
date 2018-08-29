@@ -1,6 +1,8 @@
 <template>
   <div class="card">
-    <component :is="component" />
+    <div class="circle">
+      <component :is="component" />
+    </div>
     <p class="title">{{title}}</p>
     <p class="desc">{{desc}}</p>
     <ui-button text="View Details"/>
@@ -73,5 +75,12 @@ export default {
   line-height: 17px;
   text-align: center;
   margin: 20px;
+}
+
+.circle {
+  height: 165px;
+  width: 165px;
+  background: radial-gradient(circle, #714bfe 0%, #6047fa 51.09%, #5727e1 100%);
+  border-radius: 50%;
 }
 </style>

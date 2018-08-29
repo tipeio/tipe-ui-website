@@ -2,8 +2,8 @@
     <section class="info">
       <purple-shape class="purple-shape"/>
       <div class="info-text">
-        <h3 class="info-title">Projects that use Tipe Ui</h3>
-        <logo-with-text />
+        <tipe-logo />
+        <h3 class="info-title">How Developers Use Tipe Ui</h3>
       </div>
       <div class="card-row">
         <project-card title="Guide" desc="Understand the design guidelines, helping designers 
@@ -21,14 +21,14 @@ structured and easy to use." svg="resources"/>
 
 <script>
 import ProjectCard from './ProjectCard.vue'
-import LogoWithText from '~/assets/logo-with-text.svg'
+import TipeLogo from '~/assets/tipe-logo.svg'
 import PurpleShape from '~/assets/purple-shape.svg'
 
 export default {
   name: 'ProjectSection',
   components: {
     ProjectCard,
-    LogoWithText,
+    TipeLogo,
     PurpleShape
   }
 }
@@ -60,7 +60,7 @@ export default {
   letter-spacing: 0.6px;
   line-height: 48px;
   text-align: center;
-  margin: 25px 0;
+  margin: 1rem 0;
 }
 
 .info-text {
@@ -69,6 +69,7 @@ export default {
   flex-direction: column;
   z-index: 2;
   grid-area: info-text;
+  margin: 2rem 0;
 }
 
 .purple-shape {

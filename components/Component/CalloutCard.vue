@@ -13,10 +13,10 @@ export default {
 <style lang="postcss" scoped>
 .card {
   display: flex;
-  background-color: #f3f8f3;
-  border: 1px solid #50af51;
+  background-color: rgba(104, 73, 252, 0.05);
+  border: 1px solid var(--teal);
   border-radius: 3px;
-  border-left: 10px solid #1cc5bc;
+  border-left: 10px solid var(--teal);
   width: 100%;
   padding: 1.625rem;
 }

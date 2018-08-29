@@ -20,9 +20,16 @@ export default {
 <style lang="postcss" scoped>
 .outter-grid {
   display: grid;
-  grid-template-columns: 1fr 7fr 1fr;
-  grid-template-areas: '. header .' '. info .';
+  grid-template-columns: 1fr;
+  grid-template-areas: 'header' 'info';
   grid-template-rows: auto auto;
   grid-column-gap: 1rem;
+}
+
+@media screen and (min-width: 1500px) {
+  .outter-grid {
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-areas: '. header .' '. info .';
+  }
 }
 </style>

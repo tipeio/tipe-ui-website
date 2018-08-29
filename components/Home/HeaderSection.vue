@@ -88,5 +88,6 @@ export default {
 .space {
   grid-area: space;
   grid-row-start: 4;
+  width: 100%;
 }
 </style>

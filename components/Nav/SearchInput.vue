@@ -7,7 +7,7 @@
 
 <script>
 import { directive as onClickaway } from 'vue-clickaway'
-import SearchIcon from '~/assets/search.svg'
+import { SearchIcon } from '~/assets'
 
 export default {
   name: 'UiSearchInput',

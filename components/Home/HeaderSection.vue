@@ -17,8 +17,8 @@
 <script>
 import UiNav from '~/components/Nav'
 import UiButton from '~/components/Component/Button.vue'
-import SpacePeople from '~/assets/space-people.svg'
-import Stars from '~/assets/stars.svg'
+import { SpacePeople, Stars } from '~/assets'
+
 import { TipeTextInput, TipeField, TipeTextarea, TipeButton } from '@tipe/ui'
 
 export default {

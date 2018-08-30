@@ -21,8 +21,7 @@ structured and easy to use." svg="resources"/>
 
 <script>
 import ProjectCard from './ProjectCard.vue'
-import TipeLogo from '~/assets/tipe-logo.svg'
-import PurpleShape from '~/assets/purple-shape.svg'
+import { TipeLogo, PurpleShape } from '~/assets'
 
 export default {
   name: 'ProjectSection',

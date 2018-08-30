@@ -23,15 +23,27 @@ export default {
   min-height: 100vh;
   display: grid;
   grid-column-gap: 1rem;
-  grid-template-columns: 1fr 2fr 5fr 1fr;
+  grid-template-columns: 2fr 6fr;
   grid-auto-rows: 100px 1fr;
   grid-template-areas:
-    ' . nav nav .'
-    '. sidebar content .';
+    'nav nav'
+    'sidebar content';
+}
+
+@media screen and (min-width: 1800px) {
+  .container {
+    grid-template-columns: 1fr 2fr 6fr 1fr;
+    grid-template-areas:
+      '. nav nav .'
+      '. sidebar content .';
+  }
 }
 
 .grid-sidebar {
   grid-area: sidebar;
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-template-areas: '. list';
 }
 
 .grid-content {

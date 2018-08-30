@@ -1,7 +1,7 @@
 <template>
   <div>
     <tipe-scroll class="sidebar">
-      <List>
+      <List class="list">
         <Heading>Sponsors</Heading>
         <sponsor logo="sample-logo" text="It was a humorously perilous business 
         for both of us. For, before we proceed 
@@ -98,9 +98,15 @@ export default {
 <style lang="postcss" scoped>
 .sidebar {
   height: 100%;
-  padding-left: 3rem;
-  padding-top: 3rem;
   border-right: 1px solid rgba(56, 74, 101, 0.5);
+  grid-area: list;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.list {
+  margin-top: 60px;
+  max-width: 290px;
 }
 
 .nuxt-link-active > div {

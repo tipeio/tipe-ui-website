@@ -26,7 +26,7 @@ export default {
   grid-column-gap: 1rem;
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1800px) {
   .outter-grid {
     grid-template-columns: 1fr 7fr 1fr;
     grid-template-areas: '. header .' '. info .';

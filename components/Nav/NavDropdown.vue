@@ -75,6 +75,7 @@ export default {
 .footer-link {
   font-size: 1rem;
   opacity: 1;
+  margin: 0 27px;
 }
 
 .dropdown {

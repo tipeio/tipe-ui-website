@@ -29,8 +29,7 @@ export default {
   components: {
     HeaderSection,
     ProjectSection,
-    UiFooter
-    SupportModal,
+    UiFooter,
     TipeModal,
     TipeTextInput,
     TipeField,

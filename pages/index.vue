@@ -1,20 +1,22 @@
 <template>
   <div class="outter-grid">
     <tipe-modal height="500px" width="600px" class="modal" v-if="open" @close="toggle">
-      <tipe-field label="Full Name">
-        <tipe-text-input size="medium"/>
-      </tipe-field>
-      <tipe-field label="Email">
-        <tipe-text-input size="medium"/>
-      </tipe-field>
-      <tipe-field label="Message">
-        <tipe-textarea size="medium"/>
-      </tipe-field>
-      <tipe-button>Submit</tipe-button>
+      <div class="inputs">
+        <tipe-field label="Full Name">
+          <tipe-text-input size="medium"/>
+        </tipe-field>
+        <tipe-field label="Email">
+          <tipe-text-input size="medium"/>
+        </tipe-field>
+        <tipe-field label="Message">
+          <tipe-textarea size="medium"/>
+        </tipe-field>
+        <tipe-button class="submit-btn">Submit</tipe-button>
+      </div>
     </tipe-modal>
-   <header-section @click="toggle"/>
+   <header-section/>
    <project-section/>
-   <ui-footer/>
+   <ui-footer @support="toggle"/>
   </div>
 </template>
 
@@ -43,7 +45,6 @@ export default {
   },
   methods: {
     toggle() {
-      console.log('HELLOOOP')
       this.open = !this.open
     }
   }
@@ -63,6 +64,14 @@ export default {
 
 .modal {
   z-index: 10;
+}
+
+.inputs {
+  padding: 0 4rem;
+}
+
+.submit-btn {
+  width: 100% !important;
 }
 
 @media screen and (min-width: 1800px) {

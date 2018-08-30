@@ -11,9 +11,9 @@
         <nav-link footer to="/github" text="Github"/>
         <nav-dropdown footer :links="versions" text="1.0.0"/>  
         <nav-dropdown footer :links="languages" text="English"/>      
-        <nav-link footer to="/support" text="Support"/>
+        <a class="support" @click="$emit('support')">Support</a>
       </div>
-      <div class="line-break"><line-break/></div>
+      <div class="line-break"/>
       <div class="logo">
         <tipe-logo />
         <p>Join Us On</p>
@@ -183,5 +183,18 @@ export default {
   justify-self: center;
   width: 60%;
   margin-bottom: 2rem;
+}
+
+.support {
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 27px;
 }
 </style>

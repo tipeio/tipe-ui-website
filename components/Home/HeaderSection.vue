@@ -1,7 +1,7 @@
 <template>
   <section class="header-content">
     <stars class="stars" />
-    <ui-nav class="home-nav" transparent/>
+    <ui-nav @click="$emit('click')" class="home-nav" transparent/>
     <div class="container">
       <h1 class="title">Flexible Ui Library</h1>
       <h2 class="subtitle">Focus on your code while designers, writers, and content specialists take care of the message</h2>
@@ -19,6 +19,7 @@ import UiNav from '~/components/Nav'
 import UiButton from '~/components/Component/Button.vue'
 import SpacePeople from '~/assets/space-people.svg'
 import Stars from '~/assets/stars.svg'
+import { TipeTextInput, TipeField, TipeTextarea, TipeButton } from '@tipe/ui'
 
 export default {
   name: 'HeaderSection',
@@ -26,7 +27,11 @@ export default {
     UiNav,
     SpacePeople,
     UiButton,
-    Stars
+    Stars,
+    TipeTextInput,
+    TipeField,
+    TipeTextarea,
+    TipeButton
   }
 }
 </script>

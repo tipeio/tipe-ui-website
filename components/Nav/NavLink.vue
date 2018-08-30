@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="to" class="nav-link" :class="{active, 'footer-link': footer}">{{text}}</nuxt-link>
+  <nuxt-link @click="$emit('support')" :to="to" class="nav-link" :class="{active, 'footer-link': footer}">{{text}}</nuxt-link>
 </template>
 
 <script>

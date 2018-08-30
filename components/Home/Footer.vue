@@ -32,8 +32,7 @@
 <script>
 import NavLink from '~/components/Nav/NavLink.vue'
 import NavDropdown from '~/components/Nav/NavDropdown.vue'
-import TipeLogo from '~/assets/tipe-logo.svg'
-import Google from '~/assets/google.svg'
+import { TipeLogo, Google } from '~/assets'
 
 export default {
   name: 'Footer',

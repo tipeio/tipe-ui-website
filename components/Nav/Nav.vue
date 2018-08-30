@@ -9,9 +9,7 @@
       <nav-dropdown :links="versions" text="1.0.0"/>      
       <nav-link to="/guide" :active="$nuxt.$route.path.includes('guide')" text="Guide"/>
       <nav-link to="/component/quick-start" :active="$nuxt.$route.path.includes('component')" text="Component"/>
-      <!-- <nav-link to="/resource" :active="$nuxt.$route.path.includes('resource')" text="Resource"/> -->
-      <a @click="$emit('click')">Support</a>
-
+      <nav-link to="/resource" :active="$nuxt.$route.path.includes('resource')" text="Resource"/>
       <nav-dropdown :links="languages" text="English"/>      
     </div>
   </nav>
@@ -22,7 +20,7 @@ import vueTypes from 'vue-types'
 import NavLink from './NavLink.vue'
 import NavDropdown from './NavDropdown.vue'
 import SearchInput from './SearchInput.vue'
-import TipeLogo from '~/assets/tipe-logo.svg'
+import { TipeLogo } from '~/assets'
 
 export default {
   name: 'UiNav',

@@ -12,17 +12,15 @@
 <script>
 import vueTypes from 'vue-types'
 import UiButton from '~/components/Component/Button.vue'
-import Guide from '~/assets/guide.svg'
-import ComponentSvg from '~/assets/component.svg'
-import Resources from '~/assets/resources.svg'
+import { IcGuide, IcComponent, IcResources } from '~/assets'
 
 export default {
   name: 'ProjectCard',
   components: {
     UiButton,
-    Guide,
-    ComponentSvg,
-    Resources
+    IcGuide,
+    IcComponent,
+    IcResources
   },
   props: {
     title: vueTypes.string.def(''),
@@ -32,9 +30,9 @@ export default {
   computed: {
     component() {
       const svgs = {
-        guide: Guide,
-        component: ComponentSvg,
-        resources: Resources
+        guide: IcGuide,
+        component: IcComponent,
+        resources: IcResources
       }
       return svgs[this.svg]
     }

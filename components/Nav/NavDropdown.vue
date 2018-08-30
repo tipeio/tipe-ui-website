@@ -14,7 +14,7 @@
 <script>
 import vueTypes from 'vue-types'
 import { directive as onClickaway } from 'vue-clickaway'
-import DownArrow from '~/assets/down-arrow.svg'
+import { DownArrow } from '~/assets'
 
 export default {
   name: 'UiNavDropdown',

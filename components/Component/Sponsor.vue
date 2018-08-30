@@ -7,7 +7,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import SampleLogo from '~/assets/sample-logo.svg'
+import { SampleLogo } from '~/assets'
 
 export default {
   name: 'Sponsor',

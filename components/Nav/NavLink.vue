@@ -31,15 +31,16 @@ export default {
   margin: 0 10px;
 }
 
-.footer-link {
-  font-size: 1rem;
-  opacity: 1;
-}
-
 @media screen and (min-width: 1500px) {
   .nav-link {
     margin: 0 27px;
   }
+}
+
+.footer-link {
+  font-size: 1rem;
+  opacity: 1;
+  margin: 0 27px;
 }
 
 .active {

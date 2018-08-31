@@ -11,7 +11,7 @@
 
 <script>
 import vueTypes from 'vue-types'
-import UiButton from '~/components/Component/Button.vue'
+import UiButton from '~/components/Button.vue'
 import { IcGuide, IcComponent, IcResources } from '~/assets'
 
 export default {

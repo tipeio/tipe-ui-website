@@ -27,13 +27,13 @@
 
 <script>
 import { TipeCard, TipeButton } from '@tipe/ui'
+import ComponentGrid from '~/components/Grid.vue'
 import {
   AttrTitle,
   AttrDesc,
   ComponentCodeBlock,
-  ComponentGrid,
   ComponentTitle
-} from '~/components/Component'
+} from '~/components/Docs'
 
 export default {
   layout: 'docs',

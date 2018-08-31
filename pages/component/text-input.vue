@@ -1,7 +1,7 @@
 <template>
   <component-grid>
-    <component-title title="Text Input" />
-    <component-code-block sourcecode="import { TipeTextInput } from '@tipe/ui'"/>
+    <title title="Text Input" />
+    <code-block sourcecode="import { TipeTextInput } from '@tipe/ui'"/>
     <attr-title title="Size"/>
     <tipe-card class="flex">
       <tipe-field label="small">
@@ -14,38 +14,36 @@
         <tipe-text-input size="large"/>
       </tipe-field>
     </tipe-card>
-    <component-code-block :sourcecode="sizeSourcecode"/>
+    <code-block :sourcecode="sizeSourcecode"/>
     <attr-title title="Status"/>
     <tipe-card id="status">
         <tipe-text-input placeholder="success" status="success"/>
         <tipe-text-input placeholder="warning" status="warning"/>
         <tipe-text-input placeholder="error" status="error"/>
     </tipe-card>
-    <component-code-block :sourcecode="statusSourcecode"/>
+    <code-block :sourcecode="statusSourcecode"/>
     <attr-title title="States"/>
     <tipe-card id="states">
         <tipe-text-input placeholder="disabled" disabled/>
         <tipe-text-input placeholder="waiting" waiting/>
     </tipe-card>
-    <component-code-block :sourcecode="stateSourcecode"/>
+    <code-block :sourcecode="stateSourcecode"/>
   </component-grid>
 </template>
 
 <script>
 import { TipeCard, TipeTextInput, TipeField } from '@tipe/ui'
-import ComponentTitle from '~/components/Component/Title.vue'
-import ComponentGrid from '~/components/Component/Grid.vue'
-import ComponentCodeBlock from '~/components/Component/CodeBlock.vue'
-import AttrTitle from '~/components/Component/AttrTitle.vue'
+import { Title, AttrTitle, CodeBlock } from '~/components/Docs'
+import ComponentGrid from '~/components/Grid.vue'
 
 export default {
   layout: 'docs',
   components: {
     TipeCard,
     TipeTextInput,
-    ComponentTitle,
+    Title,
     ComponentGrid,
-    ComponentCodeBlock,
+    CodeBlock,
     AttrTitle,
     TipeField
   },

@@ -1,7 +1,7 @@
 <template>
   <component-grid>
-    <component-title title="Textarea" />
-    <component-code-block sourcecode="import { TipeTextarea } from '@tipe/ui'"/>
+    <title title="Textarea" />
+    <code-block sourcecode="import { TipeTextarea } from '@tipe/ui'"/>
     <attr-title title="Size"/>
     <tipe-card class="flex">
       <tipe-field label="small">
@@ -14,38 +14,36 @@
         <tipe-textarea size="large"/>
       </tipe-field>
     </tipe-card>
-    <component-code-block :sourcecode="sizeSourcecode"/>
+    <code-block :sourcecode="sizeSourcecode"/>
     <attr-title title="Status"/>
     <tipe-card id="status">
         <tipe-textarea placeholder="success" status="success"/>
         <tipe-textarea placeholder="warning" status="warning"/>
         <tipe-textarea placeholder="error" status="error"/>
     </tipe-card>
-    <component-code-block :sourcecode="statusSourcecode"/>
+    <code-block :sourcecode="statusSourcecode"/>
     <attr-title title="States"/>
     <tipe-card id="states">
         <tipe-textarea placeholder="disabled" disabled/>
         <tipe-textarea placeholder="waiting" waiting/>
     </tipe-card>
-    <component-code-block :sourcecode="stateSourcecode"/>
+    <code-block :sourcecode="stateSourcecode"/>
   </component-grid>
 </template>
 
 <script>
 import { TipeCard, TipeTextarea, TipeField } from '@tipe/ui'
-import ComponentTitle from '~/components/Component/Title.vue'
-import ComponentGrid from '~/components/Component/Grid.vue'
-import ComponentCodeBlock from '~/components/Component/CodeBlock.vue'
-import AttrTitle from '~/components/Component/AttrTitle.vue'
+import { Title, AttrTitle, CodeBlock } from '~/components/Docs'
+import ComponentGrid from '~/components/Grid.vue'
 
 export default {
   layout: 'docs',
   components: {
     TipeCard,
     TipeTextarea,
-    ComponentTitle,
+    Title,
     ComponentGrid,
-    ComponentCodeBlock,
+    CodeBlock,
     AttrTitle,
     TipeField
   },

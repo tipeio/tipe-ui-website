@@ -40,11 +40,11 @@
 
 <script>
 import { TipeCard, TipeButton } from '@tipe/ui'
-import ComponentTitle from '~/components/Component/Title.vue'
-import ComponentGrid from '~/components/Component/Grid.vue'
-import ComponentCodeBlock from '~/components/Component/CodeBlock.vue'
-import AttrTitle from '~/components/Component/AttrTitle.vue'
-import AttrDesc from '~/components/Component/AttrDesc.vue'
+import ComponentTitle from '~/components/Docs/Title.vue'
+import ComponentGrid from '~/components/Grid.vue'
+import ComponentCodeBlock from '~/components/Docs/CodeBlock.vue'
+import AttrTitle from '~/components/Docs/AttrTitle.vue'
+import AttrDesc from '~/components/Docs/AttrDesc.vue'
 
 export default {
   layout: 'docs',

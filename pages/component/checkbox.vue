@@ -10,8 +10,8 @@
 <script>
 import { TipeCard, TipeCheckbox } from '@tipe/ui'
 import UiTable from '~/components/Table.vue'
-import ComponentTitle from '~/components/Component/Title.vue'
-import ComponentGrid from '~/components/Component/Grid.vue'
+import ComponentTitle from '~/components/Docs/Title.vue'
+import ComponentGrid from '~/components/Grid.vue'
 
 export default {
   layout: 'docs',

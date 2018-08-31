@@ -75,12 +75,12 @@
 
 <script>
 import vueTypes from 'vue-types'
-import TipeScroll from './Component/Scroll.vue'
+import TipeScroll from './Scroll.vue'
 import List from './List/List.vue'
 import Heading from './List/Heading.vue'
 import SubHeading from './List/SubHeading.vue'
 import Item from './List/Item.vue'
-import Sponsor from '~/components/Component/Sponsor.vue'
+import Sponsor from '~/components/Sponsor.vue'
 
 export default {
   name: 'UiSidebar',

@@ -1,23 +1,23 @@
 <template>
   <component-grid>
-    <component-title title="Icon Button" />
-    <component-code-block sourcecode="import { TipeButton } from '@tipe/ui'"/>
+    <title title="Icon Button" />
+    <code-block sourcecode="import { TipeButton } from '@tipe/ui'"/>
     <attr-title title="Icon Before"/>
     <tipe-card class="flex">
       <tipe-button iconBefore="plus">Before</tipe-button>
     </tipe-card>
-    <component-code-block :sourcecode="beforeSourcecode"/>
+    <code-block :sourcecode="beforeSourcecode"/>
     <attr-title title="Icon After"/>
     <tipe-card class="flex">
       <tipe-button iconAfter="plus">After</tipe-button>
     </tipe-card>
-    <component-code-block :sourcecode="afterSourcecode"/>
+    <code-block :sourcecode="afterSourcecode"/>
     <attr-title title="Icon Only"/>
     <tipe-card class="flex">
       <tipe-button color="none" iconAfter="plus"/>
       <tipe-button iconAfter="plus"/>
     </tipe-card>
-    <component-code-block :sourcecode="onlySourcecode"/>
+    <code-block :sourcecode="onlySourcecode"/>
     <attr-title title="Supported Icons"/>
     <tipe-card id="icons">
       <tipe-button v-for="icon in icons" :key="icon" :iconAfter=icon>{{icon}}</tipe-button>
@@ -28,21 +28,16 @@
 <script>
 import { TipeCard, TipeButton } from '@tipe/ui'
 import ComponentGrid from '~/components/Grid.vue'
-import {
-  AttrTitle,
-  AttrDesc,
-  ComponentCodeBlock,
-  ComponentTitle
-} from '~/components/Docs'
+import { AttrTitle, AttrDesc, CodeBlock, Title } from '~/components/Docs'
 
 export default {
   layout: 'docs',
   components: {
     TipeCard,
     TipeButton,
-    ComponentTitle,
+    Title,
     ComponentGrid,
-    ComponentCodeBlock,
+    CodeBlock,
     AttrTitle
   },
   data() {

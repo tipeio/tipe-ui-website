@@ -1,7 +1,7 @@
 <template>
   <component-grid>
-    <component-title title="Button" />
-    <component-code-block sourcecode="import { TipeButton } from '@tipe/ui'"/>
+    <title title="Button" />
+    <code-block sourcecode="import { TipeButton } from '@tipe/ui'"/>
     <attr-title title="Size"/>
     <attr-desc text="Size"/>
     <tipe-card class="flex">
@@ -10,7 +10,7 @@
       <tipe-button size="medium">Medium</tipe-button>
       <tipe-button size="large">Large</tipe-button>
     </tipe-card>
-    <component-code-block :sourcecode="sizeSourcecode"/>
+    <code-block :sourcecode="sizeSourcecode"/>
     <attr-title title="Color"/>
     <tipe-card class="flex">
       <tipe-button color="primary">Primary</tipe-button>
@@ -19,7 +19,7 @@
       <tipe-button color="warning">Warning</tipe-button>
       <tipe-button color="danger">Danger</tipe-button>
     </tipe-card>
-    <component-code-block :sourcecode="colorSourcecode"/>
+    <code-block :sourcecode="colorSourcecode"/>
     <attr-title title="Outline"/>
     <tipe-card class="flex">
       <tipe-button outline>Outline</tipe-button>
@@ -28,32 +28,29 @@
       <tipe-button outline color="warning">Outline</tipe-button>
       <tipe-button outline color="danger">Outline</tipe-button>
     </tipe-card>
-    <component-code-block :sourcecode="outlineSourcecode"/>
+    <code-block :sourcecode="outlineSourcecode"/>
     <attr-title title="Status"/>
     <tipe-card class="flex">
       <tipe-button disabled>Disabled</tipe-button>
       <tipe-button waiting>Waiting</tipe-button>
     </tipe-card>
-    <component-code-block :sourcecode="statusSourcecode"/>
+    <code-block :sourcecode="statusSourcecode"/>
   </component-grid>
 </template>
 
 <script>
 import { TipeCard, TipeButton } from '@tipe/ui'
-import ComponentTitle from '~/components/Docs/Title.vue'
+import { Title, AttrTitle, CodeBlock, AttrDesc } from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
-import ComponentCodeBlock from '~/components/Docs/CodeBlock.vue'
-import AttrTitle from '~/components/Docs/AttrTitle.vue'
-import AttrDesc from '~/components/Docs/AttrDesc.vue'
 
 export default {
   layout: 'docs',
   components: {
     TipeCard,
     TipeButton,
-    ComponentTitle,
+    Title,
     ComponentGrid,
-    ComponentCodeBlock,
+    CodeBlock,
     AttrTitle,
     AttrDesc
   },

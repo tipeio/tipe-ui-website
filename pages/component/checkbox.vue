@@ -1,16 +1,14 @@
 <template>
   <component-grid>
-    <component-title title="Checkbox" />
+    <title title="Checkbox" />
     <tipe-card><tipe-checkbox/></tipe-card>
     <h2 class="sub-title">Attributes</h2>
-    <ui-table :attributes="attributes" />
   </component-grid>
 </template>
 
 <script>
 import { TipeCard, TipeCheckbox } from '@tipe/ui'
-import UiTable from '~/components/Table.vue'
-import ComponentTitle from '~/components/Docs/Title.vue'
+import { Title } from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
 
 export default {
@@ -18,8 +16,7 @@ export default {
   components: {
     TipeCard,
     TipeCheckbox,
-    UiTable,
-    ComponentTitle,
+    Title,
     ComponentGrid
   },
   data() {

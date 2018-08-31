@@ -1,6 +1,6 @@
 <template>
   <component-grid>
-    <title title="Number Input" />
+    <component-title title="Number Input" />
     <code-block sourcecode="import { TipeNumberInput } from '@tipe/ui'"/>
     <attr-title title="Size"/>
     <tipe-card class="flex">
@@ -40,7 +40,7 @@
 
 <script>
 import { TipeCard, TipeNumberInput, TipeField } from '@tipe/ui'
-import { Title, CodeBlock, AttrTitle } from '~/components/Docs'
+import { ComponentTitle, CodeBlock, AttrTitle } from '~/components/Docs'
 import ComponentGrid from '~/components/Grid'
 
 export default {
@@ -48,7 +48,7 @@ export default {
   components: {
     TipeCard,
     TipeNumberInput,
-    Title,
+    ComponentTitle,
     ComponentGrid,
     CodeBlock,
     AttrTitle,

@@ -174,14 +174,18 @@ export default {
 }
 
 .line-break {
-  grid-area: line-break;
-  border: 0.5px solid #fff;
-  border-radius: 50%;
-  height: 3px;
-  opacity: 0.2;
-  justify-self: center;
-  width: 60%;
-  margin-bottom: 2rem;
+  width: 100%;
+  opacity: 0.5;
+  border-style: solid;
+  border-width: 1px;
+  border-image-source: linear-gradient(
+    270deg,
+    rgba(88, 77, 251, 0),
+    #fff 52%,
+    rgba(89, 77, 252, 0)
+  );
+  border-image-slice: 1;
+  margin-bottom: 30px;
 }
 
 .support {

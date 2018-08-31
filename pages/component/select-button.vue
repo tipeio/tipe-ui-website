@@ -1,6 +1,6 @@
 <template>
   <component-grid>
-    <title title="Select Button" />
+    <component-title title="Select Button" />
     <code-block sourcecode="import { TipeSelect } from '@tipe/ui'"/>
     <attr-title title="Size"/>
     <tipe-card class="flex">
@@ -23,7 +23,7 @@
 
 <script>
 import { TipeCard, TipeSelect } from '@tipe/ui'
-import { Title, AttrTitle, CodeBlock } from '~/components/Docs'
+import { ComponentTitle, AttrTitle, CodeBlock } from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
 
 export default {
@@ -31,7 +31,7 @@ export default {
   components: {
     TipeCard,
     TipeSelect,
-    Title,
+    ComponentTitle,
     ComponentGrid,
     AttrTitle,
     CodeBlock

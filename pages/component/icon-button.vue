@@ -1,6 +1,6 @@
 <template>
   <component-grid>
-    <title title="Icon Button" />
+    <component-title title="Icon Button" />
     <code-block sourcecode="import { TipeButton } from '@tipe/ui'"/>
     <attr-title title="Icon Before"/>
     <tipe-card class="flex">
@@ -28,14 +28,19 @@
 <script>
 import { TipeCard, TipeButton } from '@tipe/ui'
 import ComponentGrid from '~/components/Grid.vue'
-import { AttrTitle, AttrDesc, CodeBlock, Title } from '~/components/Docs'
+import {
+  AttrTitle,
+  AttrDesc,
+  CodeBlock,
+  ComponentTitle
+} from '~/components/Docs'
 
 export default {
   layout: 'docs',
   components: {
     TipeCard,
     TipeButton,
-    Title,
+    ComponentTitle,
     ComponentGrid,
     CodeBlock,
     AttrTitle

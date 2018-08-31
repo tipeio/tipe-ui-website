@@ -1,6 +1,6 @@
 <template>
   <component-grid>
-    <title title="Textarea" />
+    <component-title title="Textarea" />
     <code-block sourcecode="import { TipeTextarea } from '@tipe/ui'"/>
     <attr-title title="Size"/>
     <tipe-card class="flex">
@@ -33,7 +33,7 @@
 
 <script>
 import { TipeCard, TipeTextarea, TipeField } from '@tipe/ui'
-import { Title, AttrTitle, CodeBlock } from '~/components/Docs'
+import { ComponentTitle, AttrTitle, CodeBlock } from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
 
 export default {
@@ -41,7 +41,7 @@ export default {
   components: {
     TipeCard,
     TipeTextarea,
-    Title,
+    ComponentTitle,
     ComponentGrid,
     CodeBlock,
     AttrTitle,

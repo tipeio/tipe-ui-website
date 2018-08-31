@@ -1,6 +1,6 @@
 <template>
   <component-grid>
-    <title title="Switch" />
+    <component-title title="Switch" />
     <code-block sourcecode="import { TipeSwitch } from '@tipe/ui'"/>
     <attr-title title="Size"/>
     <tipe-card class="flex">
@@ -27,7 +27,7 @@
 
 <script>
 import { TipeCard, TipeSwitch, TipeField } from '@tipe/ui'
-import { Title, AttrTitle, CodeBlock } from '~/components/Docs'
+import { ComponentTitle, AttrTitle, CodeBlock } from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
 
 export default {
@@ -35,7 +35,7 @@ export default {
   components: {
     TipeCard,
     TipeSwitch,
-    Title,
+    ComponentTitle,
     ComponentGrid,
     CodeBlock,
     AttrTitle,

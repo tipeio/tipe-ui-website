@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import ComponentGrid from '~/components/Component/Grid.vue'
+import ComponentGrid from '~/components/Grid.vue'
 
 export default {
   layout: 'docs',

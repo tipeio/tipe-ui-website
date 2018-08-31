@@ -1,45 +1,43 @@
 <template>
   <component-grid>
-    <component-title title="Radio" />
-    <component-code-block sourcecode="import { TipeRadio } from '@tipe/ui'"/>
+    <title title="Radio" />
+    <code-block sourcecode="import { TipeRadio } from '@tipe/ui'"/>
     <attr-title title="Size"/>
     <tipe-card class="flex">
       <tipe-radio size="small" label="small"/>
       <tipe-radio size="medium" label="medium"/>
       <tipe-radio size="large" label="large"/>
     </tipe-card>
-    <component-code-block :sourcecode="sizeSourcecode"/>
+    <code-block :sourcecode="sizeSourcecode"/>
     <attr-title title="Status"/>
     <tipe-card id="status">
         <tipe-radio placeholder="success" status="success" label="success"/>
         <tipe-radio placeholder="warning" status="warning" label="warning"/>
         <tipe-radio placeholder="error" status="error" label="error"/>
     </tipe-card>
-    <component-code-block :sourcecode="statusSourcecode"/>
+    <code-block :sourcecode="statusSourcecode"/>
     <attr-title title="States"/>
     <tipe-card id="states">
         <tipe-radio placeholder="disabled" label="disabled" disabled/>
         <tipe-radio placeholder="waiting" label="warning" waiting/>
     </tipe-card>
-    <component-code-block :sourcecode="stateSourcecode"/>
+    <code-block :sourcecode="stateSourcecode"/>
   </component-grid>
 </template>
 
 <script>
 import { TipeCard, TipeRadio } from '@tipe/ui'
-import ComponentTitle from '~/components/Component/Title.vue'
-import ComponentGrid from '~/components/Component/Grid.vue'
-import ComponentCodeBlock from '~/components/Component/CodeBlock.vue'
-import AttrTitle from '~/components/Component/AttrTitle.vue'
+import { Title, CodeBlock, AttrTitle } from '~/components/Docs'
+import ComponentGrid from '~/components/Grid.vue'
 
 export default {
   layout: 'docs',
   components: {
     TipeCard,
     TipeRadio,
-    ComponentTitle,
+    Title,
     ComponentGrid,
-    ComponentCodeBlock,
+    CodeBlock,
     AttrTitle
   },
   data() {

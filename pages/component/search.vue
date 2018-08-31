@@ -1,6 +1,6 @@
 <template>
   <component-grid>
-    <component-title title="Search" />
+    <title title="Search" />
     <tipe-card><tipe-search/></tipe-card>
     <h2 class="sub-title">Attributes</h2>
     <ui-table :attributes="attributes" />
@@ -10,8 +10,8 @@
 <script>
 import { TipeCard, TipeSearch } from '@tipe/ui'
 import UiTable from '~/components/Table.vue'
-import ComponentTitle from '~/components/Component/Title.vue'
-import ComponentGrid from '~/components/Component/Grid.vue'
+import { Title } from '~/components/Docs'
+import ComponentGrid from '~/components/Grid.vue'
 
 export default {
   layout: 'docs',
@@ -19,7 +19,7 @@ export default {
     TipeCard,
     TipeSearch,
     UiTable,
-    ComponentTitle,
+    Title,
     ComponentGrid
   },
   data() {

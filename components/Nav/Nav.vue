@@ -1,5 +1,5 @@
 <template>
-  <nav :data-tipe-ui="$options.name" class="nav" :class="{transparent}">
+  <nav :data-tipe-ui-docs="$options.name" class="nav" :class="{transparent}">
     <nuxt-link to="/" class="grid-logo">
       <tipe-logo  />
       <h1 class="tipe-text">Tipe</h1>
@@ -50,7 +50,7 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-[data-tipe-ui='UiNav'] {
+[data-tipe-ui-docs='UiNav'] {
   display: grid;
   align-items: center;
   grid-column-gap: 1rem;
@@ -61,7 +61,7 @@ export default {
 }
 
 @media screen and (min-width: 1500px) {
-  [data-tipe-ui='UiNav'] {
+  [data-tipe-ui-docs='UiNav'] {
     grid-template-columns: 100px auto 1fr 2fr 100px;
     grid-template-areas: '. logo search right .';
   }

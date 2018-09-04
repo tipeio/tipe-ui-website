@@ -1,5 +1,5 @@
 <template>
-  <p :data-tipe-ui="$options.name">{{text}}</p>
+  <p :data-tipe-ui-docs="$options.name">{{text}}</p>
 </template>
 
 <script>
@@ -13,7 +13,7 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-[data-tipe-ui='AttrDesc'] {
+[data-tipe-ui-docs='AttrDesc'] {
   color: var(--text-purple-gray);
   font-size: 1rem;
 }

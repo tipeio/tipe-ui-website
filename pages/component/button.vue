@@ -35,6 +35,7 @@
       <tipe-button waiting>Waiting</tipe-button>
     </tipe-card>
     <code-block :sourcecode="statusSourcecode"/>
+    <doc-links/>
   </component-grid>
 </template>
 
@@ -44,7 +45,8 @@ import {
   ComponentTitle,
   AttrTitle,
   CodeBlock,
-  AttrDesc
+  AttrDesc,
+  DocLinks
 } from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
 
@@ -57,7 +59,8 @@ export default {
     ComponentGrid,
     CodeBlock,
     AttrTitle,
-    AttrDesc
+    AttrDesc,
+    DocLinks
   },
   data() {
     return {

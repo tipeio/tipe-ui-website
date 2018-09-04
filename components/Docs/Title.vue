@@ -1,5 +1,5 @@
 <template>
-  <h1 :data-tipe-ui="$options.name">{{title}}</h1>
+  <h1 :data-tipe-ui-docs="$options.name">{{title}}</h1>
 </template>
 
 <script>
@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-[data-tipe-ui='ComponentTitle'] {
+[data-tipe-ui-docs='ComponentTitle'] {
   color: var(--text-purple);
   font-size: 2.5rem;
 }

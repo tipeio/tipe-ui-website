@@ -1,5 +1,5 @@
 <template>
-  <div :data-tipe-ui="$options.name">
+  <div :data-tipe-ui-docs="$options.name">
     <pre v-highlightjs="sourcecode"><code class="javascript"></code></pre>
   </div>
 </template>
@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-[data-tipe-ui='ComponentCodeBlock'] {
+[data-tipe-ui-docs='ComponentCodeBlock'] {
   display: flex;
   background-color: var(--light-purple);
   overflow-x: scroll;

@@ -1,11 +1,9 @@
 <template>
-    <tipe-scroll>
-
-  <div :data-tipe-ui="$options.name">
-      <slot/>
-  </div>
-    </tipe-scroll>
-
+  <tipe-scroll>
+    <div :data-tipe-ui-docs="$options.name">
+        <slot/>
+    </div>
+  </tipe-scroll>
 </template>
 
 
@@ -20,7 +18,7 @@ export default {
 </script>
 
 <style>
-[data-tipe-ui='ComponentGrid'] {
+[data-tipe-ui-docs='ComponentGrid'] {
   display: grid;
   width: 100%;
   grid-row-gap: 2rem;

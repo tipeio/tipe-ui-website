@@ -18,12 +18,19 @@
       <tipe-select type="button" :options="options" placeholder="Select a Role" color="danger"/>
     </tipe-card>
     <code-block :sourcecode="colorSourcecode"/>
+    <doc-links :left="docLink('left')" :right="docLink('right')" />
+
   </component-grid>
 </template>
 
 <script>
 import { TipeCard, TipeSelect } from '@tipe/ui'
-import { ComponentTitle, AttrTitle, CodeBlock } from '~/components/Docs'
+import {
+  ComponentTitle,
+  AttrTitle,
+  CodeBlock,
+  DocLinks
+} from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
 
 export default {
@@ -34,7 +41,20 @@ export default {
     ComponentTitle,
     ComponentGrid,
     AttrTitle,
-    CodeBlock
+    CodeBlock,
+    DocLinks
+  },
+  methods: {
+    docLink(side) {
+      if (side === 'right') {
+        return this.$store.state.docLinks[
+          this.$store.state.linkIndexes['select-button'] + 1
+        ]
+      }
+      return this.$store.state.docLinks[
+        this.$store.state.linkIndexes['select-button'] - 1
+      ]
+    }
   },
   data() {
     return {

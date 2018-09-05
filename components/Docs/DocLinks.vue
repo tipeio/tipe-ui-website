@@ -1,7 +1,7 @@
 <template>
   <div :data-tipe-ui-docs="$options.name">
-    <nuxt-link class="link" to="/changelog"><div class="flex"><left-arrow/><p class="text">Changelog</p></div></nuxt-link>
-    <nuxt-link class="link" to="quick-start"><div class="flex"><p class="text">Quick Start</p><right-arrow/></div></nuxt-link>
+    <nuxt-link v-if="left" class="link" :to="left.link"><div class="flex"><left-arrow/><p class="text">{{left.name}}</p></div></nuxt-link>
+    <nuxt-link  v-if="right" class="link" :to="right.link"><div class="flex"><p class="text">{{right.name}}</p><right-arrow/></div></nuxt-link>
   </div>
 </template>
 
@@ -12,8 +12,10 @@ import { LeftArrow, RightArrow } from '~/assets'
 export default {
   name: 'UiDocLinks',
   props: {
-    title: vueTypes.string.def('')
+    right: vueTypes.shape({ name: String, link: String }),
+    left: vueTypes.shape({ name: String, link: String })
   },
+
   components: {
     LeftArrow,
     RightArrow

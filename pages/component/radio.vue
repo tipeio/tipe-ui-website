@@ -22,12 +22,18 @@
         <tipe-radio placeholder="waiting" label="warning" waiting/>
     </tipe-card>
     <code-block :sourcecode="stateSourcecode"/>
+    <doc-links :left="docLink('left')" :right="docLink('right')" />
   </component-grid>
 </template>
 
 <script>
 import { TipeCard, TipeRadio } from '@tipe/ui'
-import { ComponentTitle, CodeBlock, AttrTitle } from '~/components/Docs'
+import {
+  ComponentTitle,
+  CodeBlock,
+  AttrTitle,
+  DocLinks
+} from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
 
 export default {
@@ -38,7 +44,20 @@ export default {
     ComponentTitle,
     ComponentGrid,
     CodeBlock,
-    AttrTitle
+    AttrTitle,
+    DocLinks
+  },
+  methods: {
+    docLink(side) {
+      if (side === 'right') {
+        return this.$store.state.docLinks[
+          this.$store.state.linkIndexes['radio'] + 1
+        ]
+      }
+      return this.$store.state.docLinks[
+        this.$store.state.linkIndexes['radio'] - 1
+      ]
+    }
   },
   data() {
     return {

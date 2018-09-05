@@ -1,0 +1,5 @@
+query Content($changelog: ID!) {
+  changelog: Changelog(id: $changelog) {
+    markdownContent
+  }
+}

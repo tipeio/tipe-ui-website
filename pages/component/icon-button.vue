@@ -22,7 +22,7 @@
     <tipe-card id="icons">
       <tipe-button v-for="icon in icons" :key="icon" :iconAfter=icon>{{icon}}</tipe-button>
     </tipe-card>
-    <doc-links :left="docLink('left')" :right="docLink('right')" />
+    <doc-links :left="docLink('left', 'icon-button')" :right="docLink('right', 'icon-button')" />
   </component-grid>
 </template>
 
@@ -36,6 +36,7 @@ import {
   ComponentTitle,
   DocLinks
 } from '~/components/Docs'
+import docMixin from '~/mixins/doc-links'
 
 export default {
   layout: 'docs',
@@ -48,18 +49,7 @@ export default {
     AttrTitle,
     DocLinks
   },
-  methods: {
-    docLink(side) {
-      if (side === 'right') {
-        return this.$store.state.docLinks[
-          this.$store.state.linkIndexes['icon-button'] + 1
-        ]
-      }
-      return this.$store.state.docLinks[
-        this.$store.state.linkIndexes['icon-button'] - 1
-      ]
-    }
-  },
+  mixins: [docMixin],
   data() {
     return {
       icons: [

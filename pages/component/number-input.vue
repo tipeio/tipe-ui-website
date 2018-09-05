@@ -35,7 +35,7 @@
       <tipe-number-input step=10 placeholder="10 step" />
     </tipe-card>
     <code-block :sourcecode="stepSourcecode"/>
-     <doc-links :left="docLink('left')" :right="docLink('right')" />
+     <doc-links :left="docLink('left', 'number-input')" :right="docLink('right', 'number-input')" />
   </component-grid>
 </template>
 
@@ -48,6 +48,7 @@ import {
   DocLinks
 } from '~/components/Docs'
 import ComponentGrid from '~/components/Grid'
+import docMixin from '~/mixins/doc-links'
 
 export default {
   layout: 'docs',
@@ -61,18 +62,7 @@ export default {
     TipeField,
     DocLinks
   },
-  methods: {
-    docLink(side) {
-      if (side === 'right') {
-        return this.$store.state.docLinks[
-          this.$store.state.linkIndexes['number-input'] + 1
-        ]
-      }
-      return this.$store.state.docLinks[
-        this.$store.state.linkIndexes['number-input'] - 1
-      ]
-    }
-  },
+  mixins: [docMixin],
   data() {
     return {
       sizeSourcecode: `<tipe-card>

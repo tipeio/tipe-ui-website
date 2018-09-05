@@ -3,7 +3,7 @@
     <component-title title="Search" />
     <tipe-card><tipe-search/></tipe-card>
     <h2 class="sub-title">Attributes</h2>
-    <doc-links :left="docLink('left')" :right="docLink('right')" />
+    <doc-links :left="docLink('left', 'search')" :right="docLink('right', 'search')" />
   </component-grid>
 </template>
 
@@ -11,6 +11,7 @@
 import { TipeCard, TipeSearch } from '@tipe/ui'
 import { ComponentTitle, DocLinks } from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
+import docMixin from '~/mixins/doc-links'
 
 export default {
   layout: 'docs',
@@ -21,18 +22,7 @@ export default {
     ComponentGrid,
     DocLinks
   },
-  methods: {
-    docLink(side) {
-      if (side === 'right') {
-        return this.$store.state.docLinks[
-          this.$store.state.linkIndexes['search'] + 1
-        ]
-      }
-      return this.$store.state.docLinks[
-        this.$store.state.linkIndexes['search'] - 1
-      ]
-    }
-  },
+  mixins: [docMixin],
   data() {
     return {
       attributes: [

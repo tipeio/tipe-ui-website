@@ -3,7 +3,7 @@
     <component-title title="Checkbox" />
     <tipe-card><tipe-checkbox/></tipe-card>
     <h2 class="sub-title">Attributes</h2>
-    <doc-links :left="docLink('left')" :right="docLink('right')" />
+    <doc-links :left="docLink('left', 'checkbox')" :right="docLink('right', 'checkbox')" />
   </component-grid>
 </template>
 
@@ -11,6 +11,7 @@
 import { TipeCard, TipeCheckbox } from '@tipe/ui'
 import { ComponentTitle, DocLinks } from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
+import docMixin from '~/mixins/doc-links'
 
 export default {
   layout: 'docs',
@@ -21,6 +22,7 @@ export default {
     ComponentGrid,
     DocLinks
   },
+  mixins: [docMixin],
   data() {
     return {
       attributes: [

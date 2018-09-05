@@ -22,6 +22,7 @@
     <tipe-card id="icons">
       <tipe-button v-for="icon in icons" :key="icon" :iconAfter=icon>{{icon}}</tipe-button>
     </tipe-card>
+    <doc-links :left="docLink('left')" :right="docLink('right')" />
   </component-grid>
 </template>
 
@@ -32,7 +33,8 @@ import {
   AttrTitle,
   AttrDesc,
   CodeBlock,
-  ComponentTitle
+  ComponentTitle,
+  DocLinks
 } from '~/components/Docs'
 
 export default {
@@ -43,7 +45,20 @@ export default {
     ComponentTitle,
     ComponentGrid,
     CodeBlock,
-    AttrTitle
+    AttrTitle,
+    DocLinks
+  },
+  methods: {
+    docLink(side) {
+      if (side === 'right') {
+        return this.$store.state.docLinks[
+          this.$store.state.linkIndexes['icon-button'] + 1
+        ]
+      }
+      return this.$store.state.docLinks[
+        this.$store.state.linkIndexes['icon-button'] - 1
+      ]
+    }
   },
   data() {
     return {

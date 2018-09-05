@@ -28,12 +28,19 @@
         <tipe-textarea placeholder="waiting" waiting/>
     </tipe-card>
     <code-block :sourcecode="stateSourcecode"/>
+        <doc-links :left="docLink('left')" :right="docLink('right')" />
+
   </component-grid>
 </template>
 
 <script>
 import { TipeCard, TipeTextarea, TipeField } from '@tipe/ui'
-import { ComponentTitle, AttrTitle, CodeBlock } from '~/components/Docs'
+import {
+  ComponentTitle,
+  AttrTitle,
+  CodeBlock,
+  DocLinks
+} from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
 
 export default {
@@ -45,7 +52,20 @@ export default {
     ComponentGrid,
     CodeBlock,
     AttrTitle,
-    TipeField
+    TipeField,
+    DocLinks
+  },
+  methods: {
+    docLink(side) {
+      if (side === 'right') {
+        return this.$store.state.docLinks[
+          this.$store.state.linkIndexes['textarea'] + 1
+        ]
+      }
+      return this.$store.state.docLinks[
+        this.$store.state.linkIndexes['textarea'] - 1
+      ]
+    }
   },
   data() {
     return {

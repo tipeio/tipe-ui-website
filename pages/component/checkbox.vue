@@ -3,12 +3,13 @@
     <component-title title="Checkbox" />
     <tipe-card><tipe-checkbox/></tipe-card>
     <h2 class="sub-title">Attributes</h2>
+    <doc-links :left="docLink('left')" :right="docLink('right')" />
   </component-grid>
 </template>
 
 <script>
 import { TipeCard, TipeCheckbox } from '@tipe/ui'
-import { ComponentTitle } from '~/components/Docs'
+import { ComponentTitle, DocLinks } from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
 
 export default {
@@ -17,7 +18,8 @@ export default {
     TipeCard,
     TipeCheckbox,
     ComponentTitle,
-    ComponentGrid
+    ComponentGrid,
+    DocLinks
   },
   data() {
     return {
@@ -36,6 +38,18 @@ export default {
           values: 'purple danger',
           default: 'purple'
         }
+      ]
+    }
+  },
+  methods: {
+    docLink(side) {
+      if (side === 'right') {
+        return this.$store.state.docLinks[
+          this.$store.state.linkIndexes['checkbox'] + 1
+        ]
+      }
+      return this.$store.state.docLinks[
+        this.$store.state.linkIndexes['checkbox'] - 1
       ]
     }
   }

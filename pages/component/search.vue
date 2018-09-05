@@ -3,12 +3,13 @@
     <component-title title="Search" />
     <tipe-card><tipe-search/></tipe-card>
     <h2 class="sub-title">Attributes</h2>
+    <doc-links :left="docLink('left')" :right="docLink('right')" />
   </component-grid>
 </template>
 
 <script>
 import { TipeCard, TipeSearch } from '@tipe/ui'
-import { ComponentTitle } from '~/components/Docs'
+import { ComponentTitle, DocLinks } from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
 
 export default {
@@ -17,7 +18,20 @@ export default {
     TipeCard,
     TipeSearch,
     ComponentTitle,
-    ComponentGrid
+    ComponentGrid,
+    DocLinks
+  },
+  methods: {
+    docLink(side) {
+      if (side === 'right') {
+        return this.$store.state.docLinks[
+          this.$store.state.linkIndexes['search'] + 1
+        ]
+      }
+      return this.$store.state.docLinks[
+        this.$store.state.linkIndexes['search'] - 1
+      ]
+    }
   },
   data() {
     return {

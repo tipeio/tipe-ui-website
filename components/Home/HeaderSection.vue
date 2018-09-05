@@ -6,8 +6,8 @@
       <h1 class="title">Flexible Ui Library</h1>
       <h2 class="subtitle">Focus on your code while designers, writers, and content specialists take care of the message</h2>
       <div class="row">
-        <ui-button text="Get Started"/> 
-        <ui-button outline text="Github (v1.0.0)"/>
+        <nuxt-link to="/development/quick-start" ><ui-button text="Get Started"/></nuxt-link>
+        <a href="https://github.com/tipeio/tipe-ui" target="__blank"><ui-button outline text="Github (v1.0.0)"/></a>
       </div>
     </div>
     <space-people class="space"/>

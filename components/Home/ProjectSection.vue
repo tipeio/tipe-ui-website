@@ -6,13 +6,13 @@
         <h3 class="info-title">How Developers Use Tipe Ui</h3>
       </div>
       <div class="card-row">
-        <project-card title="Guide" desc="Understand the design guidelines, helping designers 
+        <project-card title="Guide" link="/guide" desc="Understand the design guidelines, helping designers 
 build product that's logically sound, reasonably 
 structured and easy to use." svg="guide"/>
-        <project-card title="Component" desc="Understand the design guidelines, helping designers 
+        <project-card title="Component" link="/component/button" desc="Understand the design guidelines, helping designers 
 build product that's logically sound, reasonably 
 structured and easy to use." svg="component"/>
-        <project-card title="Resources" desc="Understand the design guidelines, helping designers 
+        <project-card title="Resources" link="/resource" desc="Understand the design guidelines, helping designers 
 build product that's logically sound, reasonably 
 structured and easy to use." svg="resources"/>
       </div>

@@ -1,3 +1,15 @@
+const stage = process.env.APP_STAGE || 'local'
+
+if (stage === 'local') {
+  require('dotenv').config()
+}
+
+const getEnvVar = ({ production, staging, local }) => {
+  return isProd(stage) ? production : stage === 'staging' ? staging : local
+}
+
+const isProd = e => /(production|prod)/gi.test(e)
+
 module.exports = {
   /*
   ** Headers of the page
@@ -16,6 +28,22 @@ module.exports = {
         rel: 'stylesheet'
       }
     ]
+  },
+  env: {
+    local: stage === 'local',
+    staging: stage === 'staging',
+    production: isProd(stage),
+    prod: isProd(stage),
+    stage: stage,
+    APP_STAGE: stage,
+    TIPE_API_KEY: process.env.TIPE_API_KEY,
+    TIPE_ID: process.env.TIPE_ID
+  },
+  modules: ['@nuxtjs/apollo'],
+  apollo: {
+    clientConfigs: {
+      default: '~/apollo/default.js'
+    }
   },
   /*
   ** Customize the progress bar color

@@ -1,14 +1,17 @@
 <template>
   <component-grid>
     <doc-title title="Changelog"/>
+    <vue-markdown lang-prefix="javascript"	 class="markdown" v-if="changelog" >{{changelog}}</vue-markdown>
     <doc-links :right="docLink('right', 'changelog')" />
   </component-grid>
 </template>
 
 <script>
+import ChangelogQuery from '~/apollo/query/ChangelogQuery.graphql'
 import ComponentGrid from '~/components/Grid.vue'
 import { DocLinks, DocTitle } from '~/components/Docs'
 import docMixin from '~/mixins/doc-links'
+import VueMarkdown from 'vue-markdown'
 
 export default {
   layout: 'docs',
@@ -16,10 +19,39 @@ export default {
   components: {
     ComponentGrid,
     DocLinks,
-    DocTitle
+    DocTitle,
+    VueMarkdown
+  },
+  data() {
+    return {
+      changelog: null
+    }
+  },
+  apollo: {
+    changelog: {
+      query: ChangelogQuery,
+      variables: {
+        changelog: '5b903be158c39600136120d2'
+      },
+      prefetch: true,
+      manual: true,
+      result({ data, loading }) {
+        this.changelog = data.changelog.markdownContent
+      }
+    }
   }
 }
 </script>
 
 <style lang="postcss" scoped>
+.markdown > h2 > a {
+  font-size: 2rem !important;
+  color: var(--text-purple-gray) !important;
+}
+
+div > h2 > a {
+}
+
+div > h3 {
+}
 </style>

@@ -3,21 +3,17 @@ import Vuex from 'vuex'
 const createStore = () => {
   return new Vuex.Store({
     state: {
-      hello: {
-        link: '/component/changelog',
-        name: 'Changelog'
-      },
       docLinks: [
         {
-          link: '/component/changelog',
+          link: '/changelog',
           name: 'Changelog'
         },
         {
-          link: '/component/installation',
+          link: '/development/installation',
           name: 'Installation'
         },
         {
-          link: '/component/quick-start',
+          link: '/development/quick-start',
           name: 'Quick Start'
         },
         {

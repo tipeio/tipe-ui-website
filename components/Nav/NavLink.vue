@@ -46,4 +46,8 @@ export default {
 .active {
   opacity: 1;
 }
+
+.nuxt-link-active {
+  opacity: 1;
+}
 </style>

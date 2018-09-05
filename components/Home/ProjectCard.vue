@@ -5,7 +5,7 @@
     </div>
     <p class="title">{{title}}</p>
     <p class="desc">{{desc}}</p>
-    <ui-button text="View Details"/>
+    <nuxt-link :to="link"><ui-button text="View Details"/></nuxt-link>
   </div>
 </template>
 
@@ -25,6 +25,7 @@ export default {
   props: {
     title: vueTypes.string.def(''),
     desc: vueTypes.string.def(''),
+    link: vueTypes.string.def(''),
     svg: vueTypes.string.def('')
   },
   computed: {

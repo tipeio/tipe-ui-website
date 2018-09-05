@@ -39,3 +39,30 @@ h5 {
 h6 {
   font-size: 1.4rem;
 }
+
+.markdown > h2,
+.markdown > h1 {
+  font-size: 1.8rem;
+  color: var(--text-purple-gray);
+  margin: 1rem 0;
+}
+
+.markdown > h2 > a,
+.markdown > h1 > a {
+  font-size: 1.8rem;
+  color: var(--text-purple);
+  margin: 1rem 0;
+}
+.markdown > h3 {
+  font-size: 1.6rem;
+  color: var(--text-black);
+  margin: 1rem 0;
+}
+
+.markdown > ul > li {
+  color: var(--text-purple-gray);
+}
+
+.markdown > ul > li > a {
+  color: var(--text-teal);
+}

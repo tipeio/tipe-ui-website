@@ -1,7 +1,7 @@
 <template>
   <component-grid>
     <doc-title title="Changelog"/>
-    <vue-markdown lang-prefix="javascript"	 class="markdown" v-if="changelog" >{{changelog}}</vue-markdown>
+    <vue-markdown class="markdown" v-if="changelog" >{{changelog}}</vue-markdown>
     <doc-links :right="docLink('right', 'changelog')" />
   </component-grid>
 </template>
@@ -44,14 +44,4 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.markdown > h2 > a {
-  font-size: 2rem !important;
-  color: var(--text-purple-gray) !important;
-}
-
-div > h2 > a {
-}
-
-div > h3 {
-}
 </style>

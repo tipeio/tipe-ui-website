@@ -1,6 +1,6 @@
 <template>
   <component-grid>
-    <component-title title="Checkbox" />
+    <doc-title title="Checkbox" />
     <tipe-card><tipe-checkbox/></tipe-card>
     <h2 class="sub-title">Attributes</h2>
     <doc-links :left="docLink('left', 'checkbox')" :right="docLink('right', 'checkbox')" />
@@ -9,7 +9,7 @@
 
 <script>
 import { TipeCard, TipeCheckbox } from '@tipe/ui'
-import { ComponentTitle, DocLinks } from '~/components/Docs'
+import { DocTitle, DocLinks } from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
 import docMixin from '~/mixins/doc-links'
 
@@ -18,7 +18,7 @@ export default {
   components: {
     TipeCard,
     TipeCheckbox,
-    ComponentTitle,
+    DocTitle,
     ComponentGrid,
     DocLinks
   },

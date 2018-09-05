@@ -1,6 +1,6 @@
 <template>
   <component-grid>
-    <div>Quick Start</div>
+    <doc-title title="Quick Start"/>
     <doc-links :left="docLink('left', 'quick-start')" :right="docLink('right', 'quick-start')" />
   </component-grid>
 
@@ -8,14 +8,15 @@
 
 <script>
 import ComponentGrid from '~/components/Grid'
-import { DocLinks } from '~/components/Docs'
+import { DocLinks, DocTitle } from '~/components/Docs'
 import docMixin from '~/mixins/doc-links'
 
 export default {
   layout: 'docs',
   components: {
     DocLinks,
-    ComponentGrid
+    ComponentGrid,
+    DocTitle
   },
   mixins: [docMixin]
 }

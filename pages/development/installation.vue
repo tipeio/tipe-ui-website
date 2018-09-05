@@ -1,13 +1,13 @@
 <template>
   <component-grid>
-    <h1>Installation</h1>
+    <doc-title title="Installation"/>
     <doc-links :right="docLink('right', 'installation')" :left="docLink('left', 'installation')" />
   </component-grid>
 </template>
 
 <script>
 import ComponentGrid from '~/components/Grid.vue'
-import { DocLinks } from '~/components/Docs'
+import { DocLinks, DocTitle } from '~/components/Docs'
 import docMixin from '~/mixins/doc-links'
 
 export default {
@@ -15,7 +15,8 @@ export default {
   mixins: [docMixin],
   components: {
     ComponentGrid,
-    DocLinks
+    DocLinks,
+    DocTitle
   }
 }
 </script>

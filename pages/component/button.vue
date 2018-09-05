@@ -1,6 +1,6 @@
 <template>
   <component-grid>
-    <component-title title="Button" />
+    <doc-title title="Button" />
     <code-block sourcecode="import { TipeButton } from '@tipe/ui'"/>
     <attr-title title="Size"/>
     <attr-desc text="Size"/>
@@ -42,7 +42,7 @@
 <script>
 import { TipeCard, TipeButton } from '@tipe/ui'
 import {
-  ComponentTitle,
+  DocTitle,
   AttrTitle,
   CodeBlock,
   AttrDesc,
@@ -56,7 +56,7 @@ export default {
   components: {
     TipeCard,
     TipeButton,
-    ComponentTitle,
+    DocTitle,
     ComponentGrid,
     CodeBlock,
     AttrTitle,

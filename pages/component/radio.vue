@@ -1,6 +1,6 @@
 <template>
   <component-grid>
-    <component-title title="Radio" />
+    <doc-title title="Radio" />
     <code-block sourcecode="import { TipeRadio } from '@tipe/ui'"/>
     <attr-title title="Size"/>
     <tipe-card class="flex">
@@ -28,12 +28,7 @@
 
 <script>
 import { TipeCard, TipeRadio } from '@tipe/ui'
-import {
-  ComponentTitle,
-  CodeBlock,
-  AttrTitle,
-  DocLinks
-} from '~/components/Docs'
+import { DocTitle, CodeBlock, AttrTitle, DocLinks } from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
 import docMixin from '~/mixins/doc-links'
 
@@ -42,7 +37,7 @@ export default {
   components: {
     TipeCard,
     TipeRadio,
-    ComponentTitle,
+    DocTitle,
     ComponentGrid,
     CodeBlock,
     AttrTitle,

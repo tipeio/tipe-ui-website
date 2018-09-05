@@ -1,6 +1,6 @@
 <template>
   <component-grid>
-    <component-title title="Search" />
+    <doc-title title="Search" />
     <tipe-card><tipe-search/></tipe-card>
     <h2 class="sub-title">Attributes</h2>
     <doc-links :left="docLink('left', 'search')" :right="docLink('right', 'search')" />
@@ -9,7 +9,7 @@
 
 <script>
 import { TipeCard, TipeSearch } from '@tipe/ui'
-import { ComponentTitle, DocLinks } from '~/components/Docs'
+import { DocTitle, DocLinks } from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
 import docMixin from '~/mixins/doc-links'
 
@@ -18,7 +18,7 @@ export default {
   components: {
     TipeCard,
     TipeSearch,
-    ComponentTitle,
+    DocTitle,
     ComponentGrid,
     DocLinks
   },

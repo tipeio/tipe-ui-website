@@ -23,6 +23,7 @@ export default {
   width: 100%;
   grid-row-gap: 2rem;
   align-content: start;
+  margin-top: 60px;
 }
 
 .scroll {

@@ -1,6 +1,6 @@
 <template>
   <component-grid>
-    <component-title title="Icon Button" />
+    <doc-title title="Icon Button" />
     <code-block sourcecode="import { TipeButton } from '@tipe/ui'"/>
     <attr-title title="Icon Before"/>
     <tipe-card class="flex">
@@ -33,7 +33,7 @@ import {
   AttrTitle,
   AttrDesc,
   CodeBlock,
-  ComponentTitle,
+  DocTitle,
   DocLinks
 } from '~/components/Docs'
 import docMixin from '~/mixins/doc-links'
@@ -43,7 +43,7 @@ export default {
   components: {
     TipeCard,
     TipeButton,
-    ComponentTitle,
+    DocTitle,
     ComponentGrid,
     CodeBlock,
     AttrTitle,

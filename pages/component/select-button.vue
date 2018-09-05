@@ -18,8 +18,7 @@
       <tipe-select type="button" :options="options" placeholder="Select a Role" color="danger"/>
     </tipe-card>
     <code-block :sourcecode="colorSourcecode"/>
-    <doc-links :left="docLink('left')" :right="docLink('right')" />
-
+    <doc-links :left="docLink('left', 'select-button')" :right="docLink('right', 'select-button')" />
   </component-grid>
 </template>
 
@@ -32,6 +31,7 @@ import {
   DocLinks
 } from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
+import docMixin from '~/mixins/doc-links'
 
 export default {
   layout: 'docs',
@@ -44,18 +44,7 @@ export default {
     CodeBlock,
     DocLinks
   },
-  methods: {
-    docLink(side) {
-      if (side === 'right') {
-        return this.$store.state.docLinks[
-          this.$store.state.linkIndexes['select-button'] + 1
-        ]
-      }
-      return this.$store.state.docLinks[
-        this.$store.state.linkIndexes['select-button'] - 1
-      ]
-    }
-  },
+  mixins: [docMixin],
   data() {
     return {
       options: [

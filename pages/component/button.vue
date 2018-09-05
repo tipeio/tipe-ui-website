@@ -35,7 +35,7 @@
       <tipe-button waiting>Waiting</tipe-button>
     </tipe-card>
     <code-block :sourcecode="statusSourcecode"/>
-    <doc-links :left="docLink('left')" :right="docLink('right')" />
+    <doc-links :left="docLink('left', 'button')" :right="docLink('right', 'button')" />
   </component-grid>
 </template>
 
@@ -49,6 +49,7 @@ import {
   DocLinks
 } from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
+import docMixin from '~/mixins/doc-links'
 
 export default {
   layout: 'docs',
@@ -62,6 +63,7 @@ export default {
     AttrDesc,
     DocLinks
   },
+  mixins: [docMixin],
   data() {
     return {
       sizeSourcecode: `<tipe-card>
@@ -87,18 +89,6 @@ export default {
   <tipe-button outline color="danger">Outline</tipe-button>
   <tipe-button outline color="warning">Outline</tipe-button>
 </tipe-card>`
-    }
-  },
-  methods: {
-    docLink(side) {
-      if (side === 'right') {
-        return this.$store.state.docLinks[
-          this.$store.state.linkIndexes['button'] + 1
-        ]
-      }
-      return this.$store.state.docLinks[
-        this.$store.state.linkIndexes['button'] - 1
-      ]
     }
   }
 }

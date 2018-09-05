@@ -28,7 +28,7 @@
         <tipe-textarea placeholder="waiting" waiting/>
     </tipe-card>
     <code-block :sourcecode="stateSourcecode"/>
-        <doc-links :left="docLink('left')" :right="docLink('right')" />
+        <doc-links :left="docLink('left', 'textarea')" :right="docLink('right', 'textarea')" />
 
   </component-grid>
 </template>
@@ -42,6 +42,7 @@ import {
   DocLinks
 } from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
+import docMixin from '~/mixins/doc-links'
 
 export default {
   layout: 'docs',
@@ -55,18 +56,7 @@ export default {
     TipeField,
     DocLinks
   },
-  methods: {
-    docLink(side) {
-      if (side === 'right') {
-        return this.$store.state.docLinks[
-          this.$store.state.linkIndexes['textarea'] + 1
-        ]
-      }
-      return this.$store.state.docLinks[
-        this.$store.state.linkIndexes['textarea'] - 1
-      ]
-    }
-  },
+  mixins: [docMixin],
   data() {
     return {
       sizeSourcecode: `<tipe-card>

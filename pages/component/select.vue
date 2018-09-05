@@ -16,7 +16,7 @@
       <tipe-select :options="options" placeholder="Select a Role" status="error"/>
     </tipe-card>
     <code-block :sourcecode="sizeSourcecode"/>
-        <doc-links :left="docLink('left')" :right="docLink('right')" />
+        <doc-links :left="docLink('left', 'select')" :right="docLink('right', 'select')" />
 
   </component-grid>
 </template>
@@ -30,6 +30,7 @@ import {
   DocLinks
 } from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
+import docMixin from '~/mixins/doc-links'
 
 export default {
   layout: 'docs',
@@ -42,18 +43,7 @@ export default {
     CodeBlock,
     DocLinks
   },
-  methods: {
-    docLink(side) {
-      if (side === 'right') {
-        return this.$store.state.docLinks[
-          this.$store.state.linkIndexes['select'] + 1
-        ]
-      }
-      return this.$store.state.docLinks[
-        this.$store.state.linkIndexes['select'] - 1
-      ]
-    }
-  },
+  mixins: [docMixin],
   data() {
     return {
       options: [

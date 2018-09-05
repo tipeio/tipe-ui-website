@@ -22,7 +22,7 @@
         <tipe-switch label="waiting" size="large" waiting/>
     </tipe-card>
     <code-block :sourcecode="stateSourcecode"/>
-        <doc-links :left="docLink('left')" :right="docLink('right')" />
+        <doc-links :left="docLink('left', 'switch')" :right="docLink('right', 'switch')" />
 
   </component-grid>
 </template>
@@ -36,6 +36,7 @@ import {
   DocLinks
 } from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
+import docMixin from '~/mixins/doc-links'
 
 export default {
   layout: 'docs',
@@ -49,18 +50,7 @@ export default {
     TipeField,
     DocLinks
   },
-  methods: {
-    docLink(side) {
-      if (side === 'right') {
-        return this.$store.state.docLinks[
-          this.$store.state.linkIndexes['switch'] + 1
-        ]
-      }
-      return this.$store.state.docLinks[
-        this.$store.state.linkIndexes['switch'] - 1
-      ]
-    }
-  },
+  mixins: [docMixin],
   data() {
     return {
       sizeSourcecode: `<tipe-card>

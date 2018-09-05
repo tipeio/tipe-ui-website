@@ -6,16 +6,16 @@
         <sponsor logo="sample-logo" text="It was a humorously perilous business 
         for both of us. For, before we proceed 
         further," />
-        <nuxt-link :class="{active: $nuxt.$route.name.includes('changelog')}" to="/changelog">
+        <nuxt-link to="/changelog">
           <Heading>Changelog</Heading>
         </nuxt-link>
         <Heading>Development</Heading>
 
-        <nuxt-link to="/component/install">
+        <nuxt-link to="/development/installation">
           <Item>Installation</Item>
         </nuxt-link>
 
-        <nuxt-link :active="{active: $nuxt.$route.name.includes('quick-start')}" to="/component/quick-start">
+        <nuxt-link to="/development/quick-start">
           <Item>Quick Start</Item>
         </nuxt-link>
 

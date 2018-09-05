@@ -1,7 +1,7 @@
 <template>
-  <div :data-tipe-ui-docs="$options.name">
-    <nuxt-link v-if="left" class="link" :to="left.link"><div class="flex"><left-arrow/><p class="text">{{left.name}}</p></div></nuxt-link>
-    <nuxt-link  v-if="right" class="link" :to="right.link"><div class="flex"><p class="text">{{right.name}}</p><right-arrow/></div></nuxt-link>
+  <div :data-tipe-ui-docs="$options.name" :class="{right: !left, left: !right}">
+    <nuxt-link v-if="left" class="link left" :to="left.link"><div class="flex"><left-arrow/><p class="text">{{left.name}}</p></div></nuxt-link>
+    <nuxt-link v-if="right" class="link right" :to="right.link"><div class="flex"><p class="text">{{right.name}}</p><right-arrow/></div></nuxt-link>
   </div>
 </template>
 
@@ -28,6 +28,14 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
 }
 
 .link {

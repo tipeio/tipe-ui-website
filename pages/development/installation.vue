@@ -7,7 +7,6 @@
     <doc-subtitle>yarn</doc-subtitle>
     <doc-sub-text>We recomend installing with <a href="https://yarnpkg.com/en/" target="__blank">yarn</a>.</doc-sub-text>
     <code-block sourcecode="yarn add @tipe/ui"/>
-    <component-preview/>
     <doc-links :right="docLink('right', 'installation')" :left="docLink('left', 'installation')" />
   </component-grid>
 </template>
@@ -19,8 +18,7 @@ import {
   DocTitle,
   DocSubtitle,
   CodeBlock,
-  DocSubText,
-  ComponentPreview
+  DocSubText
 } from '~/components/Docs'
 import docMixin from '~/mixins/doc-links'
 
@@ -33,8 +31,7 @@ export default {
     DocTitle,
     DocSubtitle,
     CodeBlock,
-    DocSubText,
-    ComponentPreview
+    DocSubText
   }
 }
 </script>

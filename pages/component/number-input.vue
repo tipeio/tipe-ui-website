@@ -28,16 +28,16 @@
     <attr-title title="Min/Max"/>
     <component-preview :sourcecode="minmaxSourcecode">
       <tipe-card class="flex">
-        <tipe-number-input min=0 placeholder="min"/>
-        <tipe-number-input max=5 placeholder="max"/>
-        <tipe-number-input min=-5 max=5 placeholder="min/max"/>
+        <tipe-number-input :min=0 placeholder="min"/>
+        <tipe-number-input :max=5 placeholder="max"/>
+        <tipe-number-input :min=-5 :max=5 placeholder="min/max"/>
       </tipe-card>
     </component-preview>
     <attr-title title="Step"/>
     <component-preview :sourcecode="stepSourcecode">
       <tipe-card class="flex">
-        <tipe-number-input step=5 placeholder="5 step" />
-        <tipe-number-input step=10 placeholder="10 step" />
+        <tipe-number-input :step=5 placeholder="5 step" />
+        <tipe-number-input :step=10 placeholder="10 step" />
       </tipe-card>
     </component-preview>
      <doc-links :left="docLink('left', 'number-input')" :right="docLink('right', 'number-input')" />

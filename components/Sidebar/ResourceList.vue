@@ -1,11 +1,9 @@
 <template>
   <List class="list">
-      <nuxt-link to="/resource/button">
-        <Heading>Buttons</Heading>
-      </nuxt-link>
-        <nuxt-link to="/resource/form">
-        <Heading>Form</Heading>
-      </nuxt-link>
+  <Heading>Sponsors</Heading>
+  <sponsor logo="sample-logo" text="It was a humorously perilous business 
+        for both of us. For, before we proceed 
+        further," />
   </List>
 </template>
 
@@ -13,12 +11,14 @@
 import vueTypes from 'vue-types'
 import List from '../List/List.vue'
 import Heading from '../List/Heading.vue'
+import Sponsor from '~/components/Sponsor.vue'
 
 export default {
   name: 'GuideList',
   components: {
     List,
-    Heading
+    Heading,
+    Sponsor
   }
 }
 </script>

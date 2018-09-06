@@ -1,0 +1,31 @@
+
+<svg width="125px" height="100px" viewBox="0 0 125 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Resource" transform="translate(-501.000000, -444.000000)" fill-rule="nonzero">
+            <g id="Group-7" transform="translate(501.000000, 444.000000)">
+                <g id="Group-5">
+                    <rect id="Rectangle" fill="#1CC5BC" opacity="0.279854911" x="0" y="0" width="66" height="70" rx="3"></rect>
+                    <rect id="Rectangle-Copy" fill="#6849FC" opacity="0.536328125" x="75" y="0" width="50" height="19" rx="3"></rect>
+                    <rect id="Rectangle-Copy-2" fill="#6849FC" opacity="0.536328125" x="75" y="25.5" width="50" height="19" rx="3"></rect>
+                    <rect id="Rectangle-Copy-3" fill="#6849FC" opacity="0.536328125" x="75" y="51" width="50" height="19" rx="3"></rect>
+                </g>
+                <g id="Group-6" transform="translate(60.000000, 35.000000)">
+                    <circle id="Oval-3" fill="#6849FC" cx="32.5" cy="32.5" r="32.5"></circle>
+                    <g id="sketch" transform="translate(10.000000, 15.000000)">
+                        <polygon id="Shape" fill="#FFD54F" points="8.0625 14.9499667 8.0625 2.64996667 21.5 0.0833666667 34.9375 2.64996667 34.9375 14.9499667"></polygon>
+                        <polygon id="Shape" fill="#FFECB3" points="8.0625 14.9499667 21.5 0.0833666667 34.9375 14.9499667"></polygon>
+                        <polygon id="Shape" fill="#FFA000" points="0 14.9499667 21.5 40.9166333 43 14.9499667"></polygon>
+                        <polygon id="Shape" fill="#FFCA28" points="8.0625 14.9499667 21.5 40.9166333 34.9375 14.9499667"></polygon>
+                        <g id="Group" transform="translate(0.000000, 2.647917)" fill="#FFC107">
+                            <polygon id="Shape" points="0 12.30205 8.0625 0.00205000018 8.0625 12.30205"></polygon>
+                            <polygon id="Shape" points="34.9375 0.00205000018 34.9375 12.30205 43 12.30205"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

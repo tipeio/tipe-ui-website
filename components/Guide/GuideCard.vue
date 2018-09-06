@@ -50,7 +50,6 @@ export default {
   border: 1px solid #e8e8e8;
   border-radius: 5px;
   background-color: #ffffff;
-  box-shadow: 0 22px 36px 0 rgba(66, 35, 185, 0.1);
   margin: 0 17px;
   display: flex;
   flex-direction: column;

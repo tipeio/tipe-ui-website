@@ -1,6 +1,6 @@
 <template>
   <component-grid>
-    <doc-title title="Checkbox" />
+    <doc-title>Checkbox</doc-title>
     <tipe-card><tipe-checkbox/></tipe-card>
     <h2 class="sub-title">Attributes</h2>
     <doc-links :left="docLink('left', 'checkbox')" :right="docLink('right', 'checkbox')" />

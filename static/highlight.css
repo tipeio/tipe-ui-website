@@ -5,7 +5,7 @@ Style with support for rainbow parens
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: var(--light-purple);
+  background-color: #f7f8fb;
   color: var(--text-purple-gray);
   font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter,
     monospace;

@@ -1,6 +1,6 @@
 <template>
   <component-grid>
-    <doc-title title="Changelog"/>
+    <doc-title>Changelog</doc-title>
     <vue-markdown class="markdown" v-if="changelog" >{{changelog}}</vue-markdown>
     <doc-links :right="docLink('right', 'changelog')" />
   </component-grid>

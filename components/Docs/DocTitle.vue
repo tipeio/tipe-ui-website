@@ -1,15 +1,10 @@
 <template>
-  <h1 :data-tipe-ui-docs="$options.name">{{title}}</h1>
+  <h1 :data-tipe-ui-docs="$options.name"><slot/></h1>
 </template>
 
 <script>
-import vueTypes from 'vue-types'
-
 export default {
-  name: 'DocTitle',
-  props: {
-    title: vueTypes.string.def('')
-  }
+  name: 'DocTitle'
 }
 </script>
 

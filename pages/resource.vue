@@ -1,16 +1,18 @@
 <template>
   <component-grid>
-    <h1>Resource</h1>
+   <doc-title>Resource</doc-title>
   </component-grid>
 </template>
 
 <script>
 import ComponentGrid from '~/components/Grid.vue'
+import { DocTitle } from '~/components/Docs'
 
 export default {
   layout: 'docs',
   components: {
-    ComponentGrid
+    ComponentGrid,
+    DocTitle
   }
 }
 </script>

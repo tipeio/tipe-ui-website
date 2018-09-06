@@ -14,7 +14,9 @@ export default {
 
 <style lang="postcss" scoped>
 [data-tipe-ui-docs='AttrTitle'] {
-  color: var(--text-purple-gray);
-  font-size: 2rem;
+  color: var(--text-purple);
+  font-family: Lato;
+  font-size: 24px;
+  line-height: 29px;
 }
 </style>

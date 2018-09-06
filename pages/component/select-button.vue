@@ -1,6 +1,6 @@
 <template>
   <component-grid>
-    <doc-title title="Select Button" />
+    <doc-title>Select Button</doc-title>
     <code-block sourcecode="import { TipeSelect } from '@tipe/ui'"/>
     <attr-title title="Size"/>
     <tipe-card class="flex">

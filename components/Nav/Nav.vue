@@ -8,8 +8,8 @@
     <div class="right">
       <nav-dropdown :links="versions" text="1.0.0"/>      
       <nav-link to="/guide/design-disciplines" text="Guide"/>
-      <nav-link to="/development/quick-start" :active="$nuxt.$route.path.includes('component')" text="Component"/>
-      <nav-link to="/resource/button" text="Resource"/>
+      <nav-link to="/development/installation" :active="$nuxt.$route.path.includes('component')" text="Component"/>
+      <nav-link to="/resource" text="Resource"/>
       <nav-dropdown :links="languages" text="English"/>      
     </div>
   </nav>

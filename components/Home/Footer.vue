@@ -8,10 +8,10 @@
       <div class="links">
         <nav-link footer to="/changelog" text="Changelog"/>
         <nav-link footer to="/faq" text="FAQ"/>
-        <nav-link footer to="/github" text="Github"/>
+        <a class="external-link" href="https://github.com/tipeio/tipe-ui" target="__blank">Github</a>
         <nav-dropdown footer :links="versions" text="1.0.0"/>  
         <nav-dropdown footer :links="languages" text="English"/>      
-        <a class="support" @click="$emit('support')">Support</a>
+        <a class="external-link" @click="$emit('support')">Support</a>
       </div>
       <div class="line-break"/>
       <div class="logo">
@@ -19,10 +19,9 @@
         <p>Join Us On</p>
       </div>
       <div class="social">
-        <div class="social-link"><google /></div>
-        <div class="social-link"><google /></div>
-        <div class="social-link"><google /></div>
-        <div class="social-link"><google /></div>
+        <a href="https://github.com/tipeio" target="__blank"><div class="social-link"><github /></div></a>
+        <a href="https://twitter.com/tipeio?lang=en" target="__blank"><div class="social-link"><twitter /></div></a>
+        <a href="https://www.producthunt.com/upcoming/tipe" target="__blank"><div class="social-link"><product-hunt /></div></a>
       </div>
       <p class="copyright">©2018 Tipe. All Rights reserved.</p>
     </div>
@@ -32,7 +31,7 @@
 <script>
 import NavLink from '~/components/Nav/NavLink.vue'
 import NavDropdown from '~/components/Nav/NavDropdown.vue'
-import { TipeLogo, Google } from '~/assets'
+import { TipeLogo, Google, Twitter, Github, ProductHunt } from '~/assets'
 
 export default {
   name: 'Footer',
@@ -40,7 +39,10 @@ export default {
     NavLink,
     NavDropdown,
     TipeLogo,
-    Google
+    Google,
+    Twitter,
+    Github,
+    ProductHunt
   },
   data() {
     return {
@@ -188,10 +190,10 @@ export default {
   margin-bottom: 30px;
 }
 
-.support {
+.external-link {
   color: #ffffff;
   font-family: 'Lato', sans-serif;
-  font-size: 0.8125rem;
+  font-size: 1rem;
   font-weight: bold;
   letter-spacing: 2px;
   line-height: 16px;

@@ -3,33 +3,42 @@
     <doc-title>Switch</doc-title>
     <code-block sourcecode="import { TipeSwitch } from '@tipe/ui'"/>
     <attr-title title="Size"/>
-    <tipe-card class="flex">
-      <tipe-switch label="small" size="small"/>
-      <tipe-switch label="medium" size="medium"/>
-      <tipe-switch label="large" size="large"/>
-    </tipe-card>
-    <code-block :sourcecode="sizeSourcecode"/>
+    <component-preview :sourcecode="sizeSourcecode">
+      <tipe-card class="flex">
+        <tipe-switch label="small" size="small"/>
+        <tipe-switch label="medium" size="medium"/>
+        <tipe-switch label="large" size="large"/>
+      </tipe-card>
+    </component-preview>
     <attr-title title="Status"/>
+    <component-preview :sourcecode="statusSourcecode">
     <tipe-card id="status">
         <tipe-switch label="success" status="success" size="large"/>
         <tipe-switch label="warning" status="warning" size="large"/>
         <tipe-switch label="error" status="error" size="large"/>
     </tipe-card>
-    <code-block :sourcecode="statusSourcecode"/>
+    </component-preview>
     <attr-title title="States"/>
+    <component-preview :sourcecode="stateSourcecode">
     <tipe-card id="states">
         <tipe-switch label="disabled" size="large" disabled/>
         <tipe-switch label="waiting" size="large" waiting/>
     </tipe-card>
-    <code-block :sourcecode="stateSourcecode"/>
-        <doc-links :left="docLink('left', 'switch')" :right="docLink('right', 'switch')" />
+    </component-preview>
+    <doc-links :left="docLink('left', 'switch')" :right="docLink('right', 'switch')" />
 
   </component-grid>
 </template>
 
 <script>
 import { TipeCard, TipeSwitch, TipeField } from '@tipe/ui'
-import { DocTitle, AttrTitle, CodeBlock, DocLinks } from '~/components/Docs'
+import {
+  DocTitle,
+  AttrTitle,
+  CodeBlock,
+  DocLinks,
+  ComponentPreview
+} from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
 import docMixin from '~/mixins/doc-links'
 
@@ -43,7 +52,8 @@ export default {
     CodeBlock,
     AttrTitle,
     TipeField,
-    DocLinks
+    DocLinks,
+    ComponentPreview
   },
   mixins: [docMixin],
   data() {

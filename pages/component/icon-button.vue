@@ -3,21 +3,24 @@
     <doc-title>Icon Button</doc-title>
     <code-block sourcecode="import { TipeButton } from '@tipe/ui'"/>
     <attr-title title="Icon Before"/>
-    <tipe-card class="flex">
-      <tipe-button iconBefore="plus">Before</tipe-button>
-    </tipe-card>
-    <code-block :sourcecode="beforeSourcecode"/>
+    <component-preview :sourcecode="beforeSourcecode">
+      <tipe-card class="flex">
+        <tipe-button iconBefore="plus">Before</tipe-button>
+      </tipe-card>
+    </component-preview>
     <attr-title title="Icon After"/>
-    <tipe-card class="flex">
-      <tipe-button iconAfter="plus">After</tipe-button>
-    </tipe-card>
-    <code-block :sourcecode="afterSourcecode"/>
+    <component-preview :sourcecode="afterSourcecode">
+      <tipe-card class="flex">
+        <tipe-button iconAfter="plus">After</tipe-button>
+      </tipe-card>
+    </component-preview>
     <attr-title title="Icon Only"/>
-    <tipe-card class="flex">
-      <tipe-button color="none" iconAfter="plus"/>
-      <tipe-button iconAfter="plus"/>
-    </tipe-card>
-    <code-block :sourcecode="onlySourcecode"/>
+    <component-preview :sourcecode="onlySourcecode">
+      <tipe-card class="flex">
+        <tipe-button color="none" iconAfter="plus"/>
+        <tipe-button iconAfter="plus"/>
+      </tipe-card>
+    </component-preview>
     <attr-title title="Supported Icons"/>
     <tipe-card id="icons">
       <tipe-button v-for="icon in icons" :key="icon" :iconAfter=icon>{{icon}}</tipe-button>
@@ -34,7 +37,8 @@ import {
   AttrDesc,
   CodeBlock,
   DocTitle,
-  DocLinks
+  DocLinks,
+  ComponentPreview
 } from '~/components/Docs'
 import docMixin from '~/mixins/doc-links'
 
@@ -47,7 +51,8 @@ export default {
     ComponentGrid,
     CodeBlock,
     AttrTitle,
-    DocLinks
+    DocLinks,
+    ComponentPreview
   },
   mixins: [docMixin],
   data() {

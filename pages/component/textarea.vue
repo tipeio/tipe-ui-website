@@ -3,39 +3,48 @@
     <doc-title>Textarea</doc-title>
     <code-block sourcecode="import { TipeTextarea } from '@tipe/ui'"/>
     <attr-title title="Size"/>
-    <tipe-card class="flex">
-      <tipe-field label="small">
-        <tipe-textarea size="small"/>
-      </tipe-field>
-      <tipe-field label="medium">
-        <tipe-textarea size="medium"/>
-      </tipe-field>
-      <tipe-field label="large">
-        <tipe-textarea size="large"/>
-      </tipe-field>
-    </tipe-card>
-    <code-block :sourcecode="sizeSourcecode"/>
+    <component-preview :sourcecode="sizeSourcecode">
+      <tipe-card class="flex">
+        <tipe-field label="small">
+          <tipe-textarea size="small"/>
+        </tipe-field>
+        <tipe-field label="medium">
+          <tipe-textarea size="medium"/>
+        </tipe-field>
+        <tipe-field label="large">
+          <tipe-textarea size="large"/>
+        </tipe-field>
+      </tipe-card>
+    </component-preview>
     <attr-title title="Status"/>
-    <tipe-card id="status">
-        <tipe-textarea placeholder="success" status="success"/>
-        <tipe-textarea placeholder="warning" status="warning"/>
-        <tipe-textarea placeholder="error" status="error"/>
-    </tipe-card>
-    <code-block :sourcecode="statusSourcecode"/>
+    <component-preview :sourcecode="statusSourcecode">
+      <tipe-card id="status">
+          <tipe-textarea placeholder="success" status="success"/>
+          <tipe-textarea placeholder="warning" status="warning"/>
+          <tipe-textarea placeholder="error" status="error"/>
+      </tipe-card>
+    </component-preview>
     <attr-title title="States"/>
-    <tipe-card id="states">
-        <tipe-textarea placeholder="disabled" disabled/>
-        <tipe-textarea placeholder="waiting" waiting/>
-    </tipe-card>
-    <code-block :sourcecode="stateSourcecode"/>
-        <doc-links :left="docLink('left', 'textarea')" :right="docLink('right', 'textarea')" />
+    <component-preview :sourcecode="stateSourcecode">
+      <tipe-card id="states">
+          <tipe-textarea placeholder="disabled" disabled/>
+          <tipe-textarea placeholder="waiting" waiting/>
+      </tipe-card>
+    </component-preview>
+    <doc-links :left="docLink('left', 'textarea')" :right="docLink('right', 'textarea')" />
 
   </component-grid>
 </template>
 
 <script>
 import { TipeCard, TipeTextarea, TipeField } from '@tipe/ui'
-import { DocTitle, AttrTitle, CodeBlock, DocLinks } from '~/components/Docs'
+import {
+  DocTitle,
+  AttrTitle,
+  CodeBlock,
+  DocLinks,
+  ComponentPreview
+} from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
 import docMixin from '~/mixins/doc-links'
 
@@ -49,7 +58,8 @@ export default {
     CodeBlock,
     AttrTitle,
     TipeField,
-    DocLinks
+    DocLinks,
+    ComponentPreview
   },
   mixins: [docMixin],
   data() {

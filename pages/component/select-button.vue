@@ -3,28 +3,36 @@
     <doc-title>Select Button</doc-title>
     <code-block sourcecode="import { TipeSelect } from '@tipe/ui'"/>
     <attr-title title="Size"/>
-    <tipe-card class="flex">
-      <tipe-select type="button" :options="options" placeholder="Select a Role" size="small"/>
-      <tipe-select type="button" :options="options" placeholder="Select a Role" size="medium"/>
-      <tipe-select type="button" :options="options" placeholder="Select a Role" size="large"/>
-    </tipe-card>
-    <code-block :sourcecode="sizeSourcecode"/>
+    <component-preview  :sourcecode="sizeSourcecode">
+      <tipe-card class="flex">
+        <tipe-select type="button" :options="options" placeholder="Select a Role" size="small"/>
+        <tipe-select type="button" :options="options" placeholder="Select a Role" size="medium"/>
+        <tipe-select type="button" :options="options" placeholder="Select a Role" size="large"/>
+      </tipe-card>
+    </component-preview>
     <attr-title title="Color"/>
-    <tipe-card class="flex">
-      <tipe-select type="button" :options="options" placeholder="Select a Role" color="primary"/>
-      <tipe-select type="button" :options="options" placeholder="Select a Role" color="info"/>
-      <tipe-select type="button" :options="options" placeholder="Select a Role" color="success"/>
-      <tipe-select type="button" :options="options" placeholder="Select a Role" color="warning"/>
-      <tipe-select type="button" :options="options" placeholder="Select a Role" color="danger"/>
-    </tipe-card>
-    <code-block :sourcecode="colorSourcecode"/>
+    <component-preview :sourcecode="colorSourcecode">
+      <tipe-card class="flex">
+        <tipe-select type="button" :options="options" placeholder="Select a Role" color="primary"/>
+        <tipe-select type="button" :options="options" placeholder="Select a Role" color="info"/>
+        <tipe-select type="button" :options="options" placeholder="Select a Role" color="success"/>
+        <tipe-select type="button" :options="options" placeholder="Select a Role" color="warning"/>
+        <tipe-select type="button" :options="options" placeholder="Select a Role" color="danger"/>
+      </tipe-card>
+    </component-preview>
     <doc-links :left="docLink('left', 'select-button')" :right="docLink('right', 'select-button')" />
   </component-grid>
 </template>
 
 <script>
 import { TipeCard, TipeSelect } from '@tipe/ui'
-import { DocTitle, AttrTitle, CodeBlock, DocLinks } from '~/components/Docs'
+import {
+  DocTitle,
+  AttrTitle,
+  CodeBlock,
+  DocLinks,
+  ComponentPreview
+} from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
 import docMixin from '~/mixins/doc-links'
 
@@ -37,7 +45,8 @@ export default {
     ComponentGrid,
     AttrTitle,
     CodeBlock,
-    DocLinks
+    DocLinks,
+    ComponentPreview
   },
   mixins: [docMixin],
   data() {

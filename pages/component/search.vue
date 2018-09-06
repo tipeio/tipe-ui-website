@@ -9,7 +9,7 @@
 
 <script>
 import { TipeCard, TipeSearch } from '@tipe/ui'
-import { DocTitle, DocLinks } from '~/components/Docs'
+import { DocTitle, DocLinks, ComponentPreview } from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
 import docMixin from '~/mixins/doc-links'
 
@@ -20,7 +20,8 @@ export default {
     TipeSearch,
     DocTitle,
     ComponentGrid,
-    DocLinks
+    DocLinks,
+    ComponentPreview
   },
   mixins: [docMixin],
   data() {

@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <tipe-scroll class="sidebar">
-      <List class="list">
+<List class="list">
         <Heading>Sponsors</Heading>
         <sponsor logo="sample-logo" text="It was a humorously perilous business 
         for both of us. For, before we proceed 
@@ -69,23 +67,19 @@
           <Item>Search</Item>
         </nuxt-link>
       </List>
-    </tipe-scroll>
-  </div>
 </template>
 
 <script>
 import vueTypes from 'vue-types'
-import TipeScroll from './Scroll.vue'
-import List from './List/List.vue'
-import Heading from './List/Heading.vue'
-import SubHeading from './List/SubHeading.vue'
-import Item from './List/Item.vue'
+import List from '../List/List.vue'
+import Heading from '../List/Heading.vue'
+import SubHeading from '../List/SubHeading.vue'
+import Item from '../List/Item.vue'
 import Sponsor from '~/components/Sponsor.vue'
 
 export default {
-  name: 'UiSidebar',
+  name: 'ComponentList',
   components: {
-    TipeScroll,
     List,
     Heading,
     SubHeading,
@@ -94,21 +88,11 @@ export default {
   }
 }
 </script>
-
 <style lang="postcss" scoped>
-.sidebar {
-  height: 100%;
-  border-right: 1px solid rgba(56, 74, 101, 0.5);
-  grid-area: list;
-  display: flex;
-  justify-content: flex-end;
-}
-
 .list {
   margin-top: 60px;
   max-width: 290px;
 }
-
 .nuxt-link-active > div {
   color: var(--teal);
 }

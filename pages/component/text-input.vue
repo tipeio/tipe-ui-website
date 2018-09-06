@@ -3,39 +3,47 @@
     <doc-title>Text Input</doc-title>
     <code-block sourcecode="import { TipeTextInput } from '@tipe/ui'"/>
     <attr-title title="Size"/>
-    <tipe-card class="flex">
-      <tipe-field label="small">
-        <tipe-text-input size="small"/>
-      </tipe-field>
-      <tipe-field label="medium">
-        <tipe-text-input size="medium"/>
-      </tipe-field>
-      <tipe-field label="large">
-        <tipe-text-input size="large"/>
-      </tipe-field>
-    </tipe-card>
-    <code-block :sourcecode="sizeSourcecode"/>
+    <component-preview :sourcecode="sizeSourcecode">
+      <tipe-card class="flex">
+        <tipe-field label="small">
+          <tipe-text-input size="small"/>
+        </tipe-field>
+        <tipe-field label="medium">
+          <tipe-text-input size="medium"/>
+        </tipe-field>
+        <tipe-field label="large">
+          <tipe-text-input size="large"/>
+        </tipe-field>
+      </tipe-card>
+    </component-preview>
     <attr-title title="Status"/>
-    <tipe-card id="status">
-        <tipe-text-input placeholder="success" status="success"/>
-        <tipe-text-input placeholder="warning" status="warning"/>
-        <tipe-text-input placeholder="error" status="error"/>
-    </tipe-card>
-    <code-block :sourcecode="statusSourcecode"/>
+    <component-preview  :sourcecode="statusSourcecode">
+      <tipe-card id="status">
+          <tipe-text-input placeholder="success" status="success"/>
+          <tipe-text-input placeholder="warning" status="warning"/>
+          <tipe-text-input placeholder="error" status="error"/>
+      </tipe-card>
+    </component-preview>
     <attr-title title="States"/>
+    <component-preview :sourcecode="stateSourcecode"> 
     <tipe-card id="states">
         <tipe-text-input placeholder="disabled" disabled/>
         <tipe-text-input placeholder="waiting" waiting/>
     </tipe-card>
-    <code-block :sourcecode="stateSourcecode"/>
-        <doc-links :left="docLink('left', 'text-input')" :right="docLink('right', 'text-input')" />
-
+    </component-preview>
+    <doc-links :left="docLink('left', 'text-input')" :right="docLink('right', 'text-input')" />
   </component-grid>
 </template>
 
 <script>
 import { TipeCard, TipeTextInput, TipeField } from '@tipe/ui'
-import { DocTitle, AttrTitle, CodeBlock, DocLinks } from '~/components/Docs'
+import {
+  DocTitle,
+  AttrTitle,
+  CodeBlock,
+  DocLinks,
+  ComponentPreview
+} from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
 import docMixin from '~/mixins/doc-links'
 
@@ -49,7 +57,8 @@ export default {
     CodeBlock,
     AttrTitle,
     TipeField,
-    DocLinks
+    DocLinks,
+    ComponentPreview
   },
   mixins: [docMixin],
   data() {

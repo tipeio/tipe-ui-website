@@ -3,37 +3,41 @@
     <doc-title>Button</doc-title>
     <code-block sourcecode="import { TipeButton } from '@tipe/ui'"/>
     <attr-title title="Size"/>
-    <tipe-card class="flex">
-      <tipe-button size="mini">Mini</tipe-button>
-      <tipe-button size="small">Small</tipe-button>
-      <tipe-button size="medium">Medium</tipe-button>
-      <tipe-button size="large">Large</tipe-button>
-    </tipe-card>
-    <code-block :sourcecode="sizeSourcecode"/>
+    <component-preview :sourcecode="sizeSourcecode">
+      <tipe-card class="flex">
+        <tipe-button size="mini">Mini</tipe-button>
+        <tipe-button size="small">Small</tipe-button>
+        <tipe-button size="medium">Medium</tipe-button>
+        <tipe-button size="large">Large</tipe-button>
+      </tipe-card>
+    </component-preview>
     <attr-title title="Color"/>
-    <tipe-card class="flex">
-      <tipe-button color="primary">Primary</tipe-button>
-      <tipe-button color="success">Success</tipe-button>
-      <tipe-button color="info">Info</tipe-button>
-      <tipe-button color="warning">Warning</tipe-button>
-      <tipe-button color="danger">Danger</tipe-button>
-    </tipe-card>
-    <code-block :sourcecode="colorSourcecode"/>
+    <component-preview :sourcecode="colorSourcecode">
+      <tipe-card class="flex">
+        <tipe-button color="primary">Primary</tipe-button>
+        <tipe-button color="success">Success</tipe-button>
+        <tipe-button color="info">Info</tipe-button>
+        <tipe-button color="warning">Warning</tipe-button>
+        <tipe-button color="danger">Danger</tipe-button>
+      </tipe-card>
+    </component-preview>
     <attr-title title="Outline"/>
-    <tipe-card class="flex">
-      <tipe-button outline>Outline</tipe-button>
-      <tipe-button outline color="success">Outline</tipe-button>
-      <tipe-button outline color="info">Outline</tipe-button>
-      <tipe-button outline color="warning">Outline</tipe-button>
-      <tipe-button outline color="danger">Outline</tipe-button>
-    </tipe-card>
-    <code-block :sourcecode="outlineSourcecode"/>
+    <component-preview :sourcecode="outlineSourcecode">
+      <tipe-card class="flex">
+        <tipe-button outline>Outline</tipe-button>
+        <tipe-button outline color="success">Outline</tipe-button>
+        <tipe-button outline color="info">Outline</tipe-button>
+        <tipe-button outline color="warning">Outline</tipe-button>
+        <tipe-button outline color="danger">Outline</tipe-button>
+      </tipe-card>
+    </component-preview>
     <attr-title title="Status"/>
-    <tipe-card class="flex">
-      <tipe-button disabled>Disabled</tipe-button>
-      <tipe-button waiting>Waiting</tipe-button>
-    </tipe-card>
-    <code-block :sourcecode="statusSourcecode"/>
+    <component-preview :sourcecode="statusSourcecode">
+      <tipe-card class="flex">
+        <tipe-button disabled>Disabled</tipe-button>
+        <tipe-button waiting>Waiting</tipe-button>
+      </tipe-card>
+    </component-preview>
     <doc-links :left="docLink('left', 'button')" :right="docLink('right', 'button')" />
   </component-grid>
 </template>
@@ -45,7 +49,8 @@ import {
   AttrTitle,
   CodeBlock,
   AttrDesc,
-  DocLinks
+  DocLinks,
+  ComponentPreview
 } from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
 import docMixin from '~/mixins/doc-links'
@@ -60,7 +65,8 @@ export default {
     CodeBlock,
     AttrTitle,
     AttrDesc,
-    DocLinks
+    DocLinks,
+    ComponentPreview
   },
   mixins: [docMixin],
   data() {

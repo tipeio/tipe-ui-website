@@ -3,32 +3,41 @@
     <doc-title>Radio</doc-title>
     <code-block sourcecode="import { TipeRadio } from '@tipe/ui'"/>
     <attr-title title="Size"/>
-    <tipe-card class="flex">
-      <tipe-radio size="small" label="small"/>
-      <tipe-radio size="medium" label="medium"/>
-      <tipe-radio size="large" label="large"/>
-    </tipe-card>
-    <code-block :sourcecode="sizeSourcecode"/>
+    <component-preview :sourcecode="sizeSourcecode">
+      <tipe-card class="flex">
+        <tipe-radio size="small" label="small"/>
+        <tipe-radio size="medium" label="medium"/>
+        <tipe-radio size="large" label="large"/>
+      </tipe-card>
+    </component-preview>
     <attr-title title="Status"/>
-    <tipe-card id="status">
-        <tipe-radio placeholder="success" status="success" label="success"/>
-        <tipe-radio placeholder="warning" status="warning" label="warning"/>
-        <tipe-radio placeholder="error" status="error" label="error"/>
-    </tipe-card>
-    <code-block :sourcecode="statusSourcecode"/>
+    <component-preview :sourcecode="statusSourcecode">
+      <tipe-card id="status">
+          <tipe-radio placeholder="success" status="success" label="success"/>
+          <tipe-radio placeholder="warning" status="warning" label="warning"/>
+          <tipe-radio placeholder="error" status="error" label="error"/>
+      </tipe-card>
+    </component-preview>
     <attr-title title="States"/>
-    <tipe-card id="states">
-        <tipe-radio placeholder="disabled" label="disabled" disabled/>
-        <tipe-radio placeholder="waiting" label="warning" waiting/>
-    </tipe-card>
-    <code-block :sourcecode="stateSourcecode"/>
+    <component-preview :sourcecode="stateSourcecode">
+      <tipe-card id="states">
+          <tipe-radio placeholder="disabled" label="disabled" disabled/>
+          <tipe-radio placeholder="waiting" label="warning" waiting/>
+      </tipe-card>
+    </component-preview>
     <doc-links :left="docLink('left', 'radio')" :right="docLink('right', 'radio')" />
   </component-grid>
 </template>
 
 <script>
 import { TipeCard, TipeRadio } from '@tipe/ui'
-import { DocTitle, CodeBlock, AttrTitle, DocLinks } from '~/components/Docs'
+import {
+  DocTitle,
+  CodeBlock,
+  AttrTitle,
+  DocLinks,
+  ComponentPreview
+} from '~/components/Docs'
 import ComponentGrid from '~/components/Grid.vue'
 import docMixin from '~/mixins/doc-links'
 
@@ -41,7 +50,8 @@ export default {
     ComponentGrid,
     CodeBlock,
     AttrTitle,
-    DocLinks
+    DocLinks,
+    ComponentPreview
   },
   mixins: [docMixin],
   data() {

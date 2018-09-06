@@ -1,9 +1,9 @@
 <template>
   <component-grid>
     <doc-title>Select Button</doc-title>
-    <code-block sourcecode="import { TipeSelect } from '@tipe/ui'"/>
+    <code-block language="javascript" sourcecode="import { TipeSelect } from '@tipe/ui'"/>
     <attr-title title="Size"/>
-    <component-preview  :sourcecode="sizeSourcecode">
+    <component-preview  :sourcecode="sizeSourcecode" height="148px">
       <tipe-card class="flex">
         <tipe-select type="button" :options="options" placeholder="Select a Role" size="small"/>
         <tipe-select type="button" :options="options" placeholder="Select a Role" size="medium"/>
@@ -11,7 +11,7 @@
       </tipe-card>
     </component-preview>
     <attr-title title="Color"/>
-    <component-preview :sourcecode="colorSourcecode">
+    <component-preview :sourcecode="colorSourcecode" height="210px">
       <tipe-card class="flex">
         <tipe-select type="button" :options="options" placeholder="Select a Role" color="primary"/>
         <tipe-select type="button" :options="options" placeholder="Select a Role" color="info"/>

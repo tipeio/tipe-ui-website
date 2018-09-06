@@ -1,21 +1,21 @@
 <template>
   <component-grid>
     <doc-title>Icon Button</doc-title>
-    <code-block sourcecode="import { TipeButton } from '@tipe/ui'"/>
+    <code-block language="javascript" sourcecode="import { TipeButton } from '@tipe/ui'"/>
     <attr-title title="Icon Before"/>
-    <component-preview :sourcecode="beforeSourcecode">
+    <component-preview :sourcecode="beforeSourcecode"  height="106px">
       <tipe-card class="flex">
         <tipe-button iconBefore="plus">Before</tipe-button>
       </tipe-card>
     </component-preview>
     <attr-title title="Icon After"/>
-    <component-preview :sourcecode="afterSourcecode">
+    <component-preview :sourcecode="afterSourcecode" height="106px">
       <tipe-card class="flex">
         <tipe-button iconAfter="plus">After</tipe-button>
       </tipe-card>
     </component-preview>
     <attr-title title="Icon Only"/>
-    <component-preview :sourcecode="onlySourcecode">
+    <component-preview :sourcecode="onlySourcecode" height="106px">
       <tipe-card class="flex">
         <tipe-button color="none" iconAfter="plus"/>
         <tipe-button iconAfter="plus"/>
@@ -98,11 +98,11 @@ export default {
         'wrench'
       ],
       beforeSourcecode: `<tipe-card>
-    <tipe-button iconBefore="plus">Before</tipe-button>
-  </tipe-card>`,
+  <tipe-button iconBefore="plus">Before</tipe-button>
+</tipe-card>`,
       afterSourcecode: `<tipe-card>
-    <tipe-button iconAfter="plus">Before</tipe-button>
-  </tipe-card>`,
+  <tipe-button iconAfter="plus">Before</tipe-button>
+</tipe-card>`,
       onlySourcecode: `<tipe-card>
   <tipe-button color="none" iconAfter="plus"/>
   <tipe-button iconAfter="plus"/>

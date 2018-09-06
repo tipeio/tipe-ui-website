@@ -1,9 +1,9 @@
 <template>
   <component-grid>
     <doc-title>Textarea</doc-title>
-    <code-block sourcecode="import { TipeTextarea } from '@tipe/ui'"/>
+    <code-block language="javascript" sourcecode="import { TipeTextarea } from '@tipe/ui'"/>
     <attr-title title="Size"/>
-    <component-preview :sourcecode="sizeSourcecode">
+    <component-preview :sourcecode="sizeSourcecode" height="348px">
       <tipe-card class="flex">
         <tipe-field label="small">
           <tipe-textarea size="small"/>
@@ -17,7 +17,7 @@
       </tipe-card>
     </component-preview>
     <attr-title title="Status"/>
-    <component-preview :sourcecode="statusSourcecode">
+    <component-preview :sourcecode="statusSourcecode" height="226px">
       <tipe-card id="status">
           <tipe-textarea placeholder="success" status="success"/>
           <tipe-textarea placeholder="warning" status="warning"/>
@@ -25,7 +25,7 @@
       </tipe-card>
     </component-preview>
     <attr-title title="States"/>
-    <component-preview :sourcecode="stateSourcecode">
+    <component-preview :sourcecode="stateSourcecode" height="226px">
       <tipe-card id="states">
           <tipe-textarea placeholder="disabled" disabled/>
           <tipe-textarea placeholder="waiting" waiting/>

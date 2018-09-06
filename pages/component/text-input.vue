@@ -1,9 +1,9 @@
 <template>
   <component-grid>
     <doc-title>Text Input</doc-title>
-    <code-block sourcecode="import { TipeTextInput } from '@tipe/ui'"/>
+    <code-block language="javascript" sourcecode="import { TipeTextInput } from '@tipe/ui'"/>
     <attr-title title="Size"/>
-    <component-preview :sourcecode="sizeSourcecode">
+    <component-preview :sourcecode="sizeSourcecode" height="218px">
       <tipe-card class="flex">
         <tipe-field label="small">
           <tipe-text-input size="small"/>
@@ -17,7 +17,7 @@
       </tipe-card>
     </component-preview>
     <attr-title title="Status"/>
-    <component-preview  :sourcecode="statusSourcecode">
+    <component-preview  :sourcecode="statusSourcecode" height="142px">
       <tipe-card id="status">
           <tipe-text-input placeholder="success" status="success"/>
           <tipe-text-input placeholder="warning" status="warning"/>
@@ -25,7 +25,7 @@
       </tipe-card>
     </component-preview>
     <attr-title title="States"/>
-    <component-preview :sourcecode="stateSourcecode"> 
+    <component-preview :sourcecode="stateSourcecode" height="142px"> 
     <tipe-card id="states">
         <tipe-text-input placeholder="disabled" disabled/>
         <tipe-text-input placeholder="waiting" waiting/>

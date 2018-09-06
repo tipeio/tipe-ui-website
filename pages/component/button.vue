@@ -1,9 +1,9 @@
 <template>
   <component-grid>
     <doc-title>Button</doc-title>
-    <code-block sourcecode="import { TipeButton } from '@tipe/ui'"/>
+    <code-block language="javascript" sourcecode="import { TipeButton } from '@tipe/ui'"/>
     <attr-title title="Size"/>
-    <component-preview :sourcecode="sizeSourcecode">
+    <component-preview :sourcecode="sizeSourcecode" height="150px">
       <tipe-card class="flex">
         <tipe-button size="mini">Mini</tipe-button>
         <tipe-button size="small">Small</tipe-button>
@@ -12,7 +12,7 @@
       </tipe-card>
     </component-preview>
     <attr-title title="Color"/>
-    <component-preview :sourcecode="colorSourcecode">
+    <component-preview :sourcecode="colorSourcecode" height="210px">
       <tipe-card class="flex">
         <tipe-button color="primary">Primary</tipe-button>
         <tipe-button color="success">Success</tipe-button>
@@ -22,7 +22,7 @@
       </tipe-card>
     </component-preview>
     <attr-title title="Outline"/>
-    <component-preview :sourcecode="outlineSourcecode">
+    <component-preview :sourcecode="outlineSourcecode"  height="210px">
       <tipe-card class="flex">
         <tipe-button outline>Outline</tipe-button>
         <tipe-button outline color="success">Outline</tipe-button>
@@ -32,7 +32,7 @@
       </tipe-card>
     </component-preview>
     <attr-title title="Status"/>
-    <component-preview :sourcecode="statusSourcecode">
+    <component-preview :sourcecode="statusSourcecode"  height="140px">
       <tipe-card class="flex">
         <tipe-button disabled>Disabled</tipe-button>
         <tipe-button waiting>Waiting</tipe-button>

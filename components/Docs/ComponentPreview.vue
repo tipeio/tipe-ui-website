@@ -4,7 +4,7 @@
       <a :class="{active: htmlActive}" @click="click">HTML</a>
       <a :class="{active: resultActive}" @click="click">Result</a>
     </div>
-    <div>
+    <div :style="containerStyle">
       <code-block v-if="htmlActive" :sourcecode="sourcecode"></code-block>
       <slot v-if="resultActive"/>
     </div>
@@ -18,7 +18,9 @@ import { CodeBlock } from '~/components/Docs'
 export default {
   name: 'ComponentPreview',
   props: {
-    sourcecode: vueTypes.string
+    sourcecode: vueTypes.string,
+    height: vueTypes.string.def('100%'),
+    width: vueTypes.string.def('100%')
   },
   components: {
     CodeBlock
@@ -34,6 +36,12 @@ export default {
       this.htmlActive = !this.htmlActive
       this.resultActive = !this.resultActive
     }
+  },
+  computed: {
+    containerStyle: props => ({
+      'min-height': props.height,
+      width: props.width
+    })
   }
 }
 </script>

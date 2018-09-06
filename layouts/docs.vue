@@ -29,6 +29,13 @@ export default {
     'sidebar content';
 }
 
+.grid-sidebar {
+  grid-area: sidebar;
+  display: grid;
+  grid-template-columns: 50px auto;
+  grid-template-areas: '. list';
+}
+
 @media screen and (min-width: 1800px) {
   .container {
     grid-template-columns: 1fr 2fr 6fr 1fr;
@@ -36,13 +43,10 @@ export default {
       '. nav nav .'
       '. sidebar content .';
   }
-}
 
-.grid-sidebar {
-  grid-area: sidebar;
-  display: grid;
-  grid-template-columns: 100px auto;
-  grid-template-areas: '. list';
+  .grid-sidebar {
+    grid-template-columns: 100px auto;
+  }
 }
 
 .grid-content {

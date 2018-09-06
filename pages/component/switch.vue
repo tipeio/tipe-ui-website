@@ -1,9 +1,9 @@
 <template>
   <component-grid>
     <doc-title>Switch</doc-title>
-    <code-block sourcecode="import { TipeSwitch } from '@tipe/ui'"/>
+    <code-block language="javascript" sourcecode="import { TipeSwitch } from '@tipe/ui'"/>
     <attr-title title="Size"/>
-    <component-preview :sourcecode="sizeSourcecode">
+    <component-preview :sourcecode="sizeSourcecode" height="135px">
       <tipe-card class="flex">
         <tipe-switch label="small" size="small"/>
         <tipe-switch label="medium" size="medium"/>
@@ -11,7 +11,7 @@
       </tipe-card>
     </component-preview>
     <attr-title title="Status"/>
-    <component-preview :sourcecode="statusSourcecode">
+    <component-preview :sourcecode="statusSourcecode" height="135px">
     <tipe-card id="status">
         <tipe-switch label="success" status="success" size="large"/>
         <tipe-switch label="warning" status="warning" size="large"/>
@@ -19,7 +19,7 @@
     </tipe-card>
     </component-preview>
     <attr-title title="States"/>
-    <component-preview :sourcecode="stateSourcecode">
+    <component-preview :sourcecode="stateSourcecode" height="135px">
     <tipe-card id="states">
         <tipe-switch label="disabled" size="large" disabled/>
         <tipe-switch label="waiting" size="large" waiting/>

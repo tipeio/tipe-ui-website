@@ -1,9 +1,9 @@
 <template>
   <component-grid>
     <doc-title>Number Input</doc-title>
-    <code-block sourcecode="import { TipeNumberInput } from '@tipe/ui'"/>
+    <code-block language="javascript" sourcecode="import { TipeNumberInput } from '@tipe/ui'"/>
     <attr-title title="Size"/>
-    <component-preview :sourcecode="sizeSourcecode">
+    <component-preview :sourcecode="sizeSourcecode" height="146px">
       <tipe-card class="flex">
         <tipe-number-input size="small" placeholder="small"/>
         <tipe-number-input size="medium" placeholder="medium"/>
@@ -11,7 +11,7 @@
       </tipe-card>
     </component-preview>
     <attr-title title="Status"/>
-    <component-preview :sourcecode="statusSourcecode">
+    <component-preview :sourcecode="statusSourcecode" height="140px">
       <tipe-card id="status">
         <tipe-number-input placeholder="success" status="success"/>
         <tipe-number-input placeholder="warning" status="warning"/>
@@ -19,14 +19,14 @@
       </tipe-card>
     </component-preview>
     <attr-title title="States"/>
-    <component-preview :sourcecode="stateSourcecode">
+    <component-preview :sourcecode="stateSourcecode" height="140px">
       <tipe-card id="states">
         <tipe-number-input placeholder="disabled" disabled/>
         <tipe-number-input placeholder="waiting" waiting/>
       </tipe-card>
     </component-preview>
     <attr-title title="Min/Max"/>
-    <component-preview :sourcecode="minmaxSourcecode">
+    <component-preview :sourcecode="minmaxSourcecode" height="140px">
       <tipe-card class="flex">
         <tipe-number-input :min=0 placeholder="min"/>
         <tipe-number-input :max=5 placeholder="max"/>
@@ -34,7 +34,7 @@
       </tipe-card>
     </component-preview>
     <attr-title title="Step"/>
-    <component-preview :sourcecode="stepSourcecode">
+    <component-preview :sourcecode="stepSourcecode" height="140px">
       <tipe-card class="flex">
         <tipe-number-input :step=5 placeholder="5 step" />
         <tipe-number-input :step=10 placeholder="10 step" />

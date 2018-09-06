@@ -1,9 +1,9 @@
 <template>
   <component-grid>
     <doc-title>Radio</doc-title>
-    <code-block sourcecode="import { TipeRadio } from '@tipe/ui'"/>
+    <code-block language="javascript" sourcecode="import { TipeRadio } from '@tipe/ui'"/>
     <attr-title title="Size"/>
-    <component-preview :sourcecode="sizeSourcecode">
+    <component-preview :sourcecode="sizeSourcecode" height="110px">
       <tipe-card class="flex">
         <tipe-radio size="small" label="small"/>
         <tipe-radio size="medium" label="medium"/>
@@ -11,7 +11,7 @@
       </tipe-card>
     </component-preview>
     <attr-title title="Status"/>
-    <component-preview :sourcecode="statusSourcecode">
+    <component-preview :sourcecode="statusSourcecode" height="110px">
       <tipe-card id="status">
           <tipe-radio placeholder="success" status="success" label="success"/>
           <tipe-radio placeholder="warning" status="warning" label="warning"/>
@@ -19,7 +19,7 @@
       </tipe-card>
     </component-preview>
     <attr-title title="States"/>
-    <component-preview :sourcecode="stateSourcecode">
+    <component-preview :sourcecode="stateSourcecode" height="110px">
       <tipe-card id="states">
           <tipe-radio placeholder="disabled" label="disabled" disabled/>
           <tipe-radio placeholder="waiting" label="warning" waiting/>

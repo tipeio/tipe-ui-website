@@ -1,6 +1,6 @@
 <template>
   <div :data-tipe-ui-docs="$options.name">
-    <pre v-highlightjs="sourcecode"><code class="javascript"></code></pre>
+    <pre v-highlightjs="sourcecode"><code :class="{[language]: true}"></code></pre>
   </div>
 </template>
 
@@ -10,7 +10,8 @@ import vueTypes from 'vue-types'
 export default {
   name: 'ComponentCodeBlock',
   props: {
-    sourcecode: vueTypes.string.def('')
+    sourcecode: vueTypes.string.def(''),
+    language: vueTypes.string.def('html')
   }
 }
 </script>
@@ -22,5 +23,6 @@ export default {
   border: 1px solid #b5baca;
   border-radius: 3px;
   background-color: #f7f8fb;
+  width: 100%;
 }
 </style>

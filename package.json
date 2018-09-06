@@ -12,15 +12,16 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@nuxtjs/apollo": "^4.0.0-rc1",
+    "@nuxtjs/apollo": "3.0.6",
     "@tipe/ui": "2.2.1",
-    "apollo-cache-inmemory": "^1.2.9",
-    "apollo-link": "^1.2.2",
-    "apollo-link-http": "^1.5.4",
+    "apollo-cache-inmemory": "1.2.1",
+    "apollo-link": "1.2.2",
+    "apollo-link-http": "1.5.4",
     "dotenv": "^6.0.0",
-    "graphql": "^14.0.0",
-    "graphql-tag": "^2.9.2",
+    "graphql": "0.13.2",
+    "graphql-tag": "2.9.2",
     "nuxt": "^1.0.0",
+    "vue-apollo": "3.0.0-beta.9",
     "vue-clickaway": "^2.1.1",
     "vue-highlightjs": "^1.3.3",
     "vue-markdown": "^2.2.4"

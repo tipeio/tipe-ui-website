@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <ui-nav class="grid-nav"/>
-    <ui-side-bar type="component" class="grid-sidebar"/>
+    <ui-side-bar type="guide" class="grid-sidebar"/>
     <nuxt class="grid-content"/>
   </section>
 </template>

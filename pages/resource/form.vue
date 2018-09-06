@@ -1,6 +1,6 @@
 <template>
   <component-grid>
-   <doc-title>Guide</doc-title>
+   <doc-title>Form</doc-title>
   </component-grid>
 </template>
 
@@ -9,7 +9,7 @@ import ComponentGrid from '~/components/Grid.vue'
 import { DocTitle } from '~/components/Docs'
 
 export default {
-  layout: 'docs',
+  layout: 'resource',
   components: {
     ComponentGrid,
     DocTitle

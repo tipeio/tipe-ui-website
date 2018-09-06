@@ -1,6 +1,6 @@
 <template>
   <component-grid>
-    <doc-title title="Icon Button" />
+    <doc-title>Icon Button</doc-title>
     <code-block sourcecode="import { TipeButton } from '@tipe/ui'"/>
     <attr-title title="Icon Before"/>
     <tipe-card class="flex">

@@ -18,7 +18,9 @@ export default {
 <style lang="postcss" scoped>
 [data-tipe-ui-docs='ComponentCodeBlock'] {
   display: flex;
-  background-color: var(--light-purple);
   overflow-x: scroll;
+  border: 1px solid #b5baca;
+  border-radius: 3px;
+  background-color: #f7f8fb;
 }
 </style>

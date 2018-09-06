@@ -1,6 +1,6 @@
 <template>
   <component-grid>
-    <doc-title title="Radio" />
+    <doc-title>Radio</doc-title>
     <code-block sourcecode="import { TipeRadio } from '@tipe/ui'"/>
     <attr-title title="Size"/>
     <tipe-card class="flex">

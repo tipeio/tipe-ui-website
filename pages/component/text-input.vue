@@ -1,6 +1,6 @@
 <template>
   <component-grid>
-    <doc-title title="Text Input" />
+    <doc-title>Text Input</doc-title>
     <code-block sourcecode="import { TipeTextInput } from '@tipe/ui'"/>
     <attr-title title="Size"/>
     <tipe-card class="flex">

@@ -1,6 +1,6 @@
 <template>
   <component-grid>
-    <doc-title title="Switch" />
+    <doc-title>Switch</doc-title>
     <code-block sourcecode="import { TipeSwitch } from '@tipe/ui'"/>
     <attr-title title="Size"/>
     <tipe-card class="flex">

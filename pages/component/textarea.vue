@@ -1,6 +1,6 @@
 <template>
   <component-grid>
-    <doc-title title="Textarea" />
+    <doc-title>Textarea</doc-title>
     <code-block sourcecode="import { TipeTextarea } from '@tipe/ui'"/>
     <attr-title title="Size"/>
     <tipe-card class="flex">

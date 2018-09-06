@@ -1,9 +1,8 @@
 <template>
   <component-grid>
-    <doc-title title="Button" />
+    <doc-title>Button</doc-title>
     <code-block sourcecode="import { TipeButton } from '@tipe/ui'"/>
     <attr-title title="Size"/>
-    <attr-desc text="Size"/>
     <tipe-card class="flex">
       <tipe-button size="mini">Mini</tipe-button>
       <tipe-button size="small">Small</tipe-button>

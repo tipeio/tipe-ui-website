@@ -22,7 +22,6 @@ export default {
 .container {
   min-height: 100vh;
   display: grid;
-  grid-column-gap: 1rem;
   grid-template-columns: 2fr 6fr;
   grid-auto-rows: 100px 1fr;
   grid-template-areas:

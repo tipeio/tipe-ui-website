@@ -1,6 +1,6 @@
 <template>
   <component-grid>
-    <doc-title title="Quick Start"/>
+    <doc-title>Quick Start</doc-title>
     <doc-links :left="docLink('left', 'quick-start')" :right="docLink('right', 'quick-start')" />
   </component-grid>
 

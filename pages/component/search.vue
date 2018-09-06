@@ -1,6 +1,6 @@
 <template>
   <component-grid>
-    <doc-title title="Search" />
+    <doc-title>Search</doc-title>
     <tipe-card><tipe-search/></tipe-card>
     <h2 class="sub-title">Attributes</h2>
     <doc-links :left="docLink('left', 'search')" :right="docLink('right', 'search')" />

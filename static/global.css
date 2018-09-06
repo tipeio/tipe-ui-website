@@ -1,5 +1,6 @@
 @import './global-colors.css';
 @import './highlight.css';
+@import './markdown.css';
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -38,36 +39,4 @@ h5 {
 
 h6 {
   font-size: 1.4rem;
-}
-
-.markdown > h2,
-.markdown > h1 {
-  font-family: Lato;
-  font-size: 1.8rem;
-  color: var(--text-purple-gray);
-  margin: 1rem 0;
-}
-
-.markdown > h2 > a,
-.markdown > h1 > a {
-  font-family: Lato;
-  font-size: 1.8rem;
-  color: var(--text-purple);
-  margin: 1rem 0;
-}
-.markdown > h3 {
-  font-family: Lato;
-  font-size: 1.6rem;
-  color: var(--text-black);
-  margin: 1rem 0;
-}
-
-.markdown > ul > li {
-  font-family: Lato;
-  color: var(--text-purple-gray);
-}
-
-.markdown > ul > li > a {
-  font-family: Lato;
-  color: var(--text-teal);
 }

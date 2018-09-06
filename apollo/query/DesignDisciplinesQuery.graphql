@@ -1,0 +1,5 @@
+query Design($changelog: ID!) {
+  designDisciplines: DesignDisciplines(id: $changelog) {
+    disciplines
+  }
+}

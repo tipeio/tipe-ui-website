@@ -22,7 +22,7 @@ export default {
 .container {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 2fr 6fr;
+  grid-template-columns: 2fr 5fr;
   grid-auto-rows: 100px 1fr;
   grid-template-areas:
     'nav nav'
@@ -31,7 +31,7 @@ export default {
 
 @media screen and (min-width: 1800px) {
   .container {
-    grid-template-columns: 1fr 2fr 6fr 1fr;
+    grid-template-columns: 1fr 2fr 5fr 1fr;
     grid-template-areas:
       '. nav nav .'
       '. sidebar content .';

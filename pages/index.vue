@@ -54,7 +54,6 @@ export default {
 <style lang="postcss" scoped>
 .outter-grid {
   display: grid;
-  grid-template-columns: 1fr;
   grid-template-areas: 'header' 'info' ' . ' 'footer';
   grid-template-rows: auto auto 100px auto;
   grid-column-gap: 1rem;

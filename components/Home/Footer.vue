@@ -11,7 +11,7 @@
         <a class="external-link" href="https://github.com/tipeio/tipe-ui" target="__blank">Github</a>
         <nav-dropdown footer :links="versions" text="1.0.0"/>  
         <nav-dropdown footer :links="languages" text="English"/>      
-        <a class="external-link" @click="$emit('support')">Support</a>
+        <a class="external-link" href="mailto:support@tipe.io">Support</a>
       </div>
       <div class="line-break"/>
       <div class="logo">
